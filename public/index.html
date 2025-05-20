@@ -939,13 +939,13 @@
 
         .contactFormContainer1.slide-back-out {
             transform: translateX(-2000px);
-            /* transition: all 3.0s ease; */
+            transition: all 1.0s ease; 
             opacity: 0;
         }
 
         .contactFormContainer1.slide-back-in {
-            transform: translateX(0px);
-            transition: all 3.0s ease;
+            transform: translateX(0);
+            transition: all 1.0s ease;
             opacity: 1;
         }
 
@@ -2580,12 +2580,13 @@
         setTimeout(() => {
             // contactFormContainer2.classList.remove('slide-in');
             contactFormContainer2.classList.add('hiddenDisplay');
-            contactFormContainer1.classList.remove('hiddenDisplay');
-            void contactFormContainer1.offsetWidth;
-
-
-            contactFormContainer1.classList.add('slide-back-in');
+            contactFormContainer2.classList.remove('slide-out');
+            
+            contactFormContainer1.classlist.remove('hiddenDisplay');
             contactFormContainer1.classList.add('visibleDisplay');
+            contactFormContainer1.classList.remove('slide-out');
+            void contactFormContainer1.offsetWidth;
+            contactFormContainer1.classList.add('slide-back-in');
 
 
 
