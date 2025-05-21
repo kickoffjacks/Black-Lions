@@ -250,6 +250,7 @@
         .feature-card:hover {
             /* border-color: #d67d00; */
             transform: translateY(-5px);
+            box-shadow: 0px 4px 10px  rgba(214, 125, 0, 1.0);
         }
 
         .feature-card h3 {
@@ -619,7 +620,7 @@
         }
 
         .cardBox:hover {
-            box-shadow: 0 4px 10px 3px rgba(29, 23, 14, 0.1);
+            box-shadow: 0 4px 10px 3px rgba(214, 125, 0, 1);
             transform: translateX(5px);
             transition: transform 0.5s ease;
         }
@@ -792,7 +793,7 @@
             margin-bottom: 10px;
             text-align: left;
             line-height: 1.2;
-            background: linear-gradient(to right, rgba(214, 125, 0, 0.8), 30%, rgb(20, 20, 20));
+            background: linear-gradient(to right, rgba(214, 125, 0, 1), 30%, rgba(214, 125, 0, 1));
             /* Gradient */
             -webkit-background-clip: text;
             background-clip: text;
@@ -1479,10 +1480,13 @@
 
         .close-button {
             position: absolute;
-            top: 20px;
-            right: 30px;
+            top: 200px;
+            right: 600px;
             font-size: 2rem;
             color: white;
+            cursor: pointer;
+        }
+        .close-button:hover {
             cursor: pointer;
         }
 
@@ -1503,6 +1507,14 @@
             color: #ffffff !important;
             caret-color: #ffffff;
             transition: background-color 9999s ease-out, color 9999s ease-out;
+        }
+
+        .faseAfbeelding {
+            width: 150px;
+            height: 150px;
+            filter: invert(1);
+            margin-left: 15rem;
+
         }
 
         /* Tablets */
@@ -2402,40 +2414,47 @@
 
 
     <h2 id="onzeProcesText"
-        style="font-size: 2.8rem; margin-bottom: 40px; text-align: start; position: absolute; left: 10vw; margin-top: 50px;">
-        Ons Process.</h2>
+        style="font-size: 2.8rem; margin-bottom: 40px; text-align: start; position: absolute; left: 10vw; margin-top: 20px;">
+        Ons Process:</h2>
     <section class="features" id="processen">
         <div class="feature-card">
             <h3>Fase 1: Onderzoek</h3>
-            <p>We starten altijd met een goede intake. Wat wil je bereiken? Wat zijn de belangrijkste functies? Wat
+            <img src="images/Research.png" alt="Onderzoek" class="faseAfbeelding"/>
+            <!--<p>We starten altijd met een goede intake. Wat wil je bereiken? Wat zijn de belangrijkste functies? Wat
                 verwachten je gebruikers? We zetten samen een duidelijke roadmap neer. Geen aannames, maar heldere
                 doelen.
 
-            </p>
+            </p>-->
 
             <!-- <p>We onderzoeken samen de behoeften van uw bedrijf en denken mee over een passende app-oplossing.</p> -->
         </div>
 
         <div class="feature-card">
             <h3>Fase 2: Ontwikkeling</h3>
-            <p>We bouwen in korte iteraties en houden je tussendoor altijd op de hoogte. Onze stack (React Native,
+
+            <img src="images/app-development.png" alt="app-development" class="faseAfbeelding"/>
+           <!-- <p>We bouwen in korte iteraties en houden je tussendoor altijd op de hoogte. Onze stack (React Native,
                 Supabase, TypeScript) zorgt voor snelheid én schaalbaarheid. Alles met oog voor design en performance.
-            </p>
+            </p> -->
             <!-- <p>We ontwikkelen een moderne, snelle en functionele app op maat met behulp van bewezen technologieën.
             </p> -->
         </div>
 
         <div class="feature-card">
             <h3>Fase 3: Oplevering</h3>
+            <img src="images/Oplevering.png" alt="Oplevering" class="faseAfbeelding"/>
+            <!--
             <p>De app wordt zorgvuldig getest en overgedragen. We begeleiden je bij publicatie en zorgen dat alles
-                soepel draait op Android en iOS — of op het web, als dat nodig is.</p>
+                soepel draait op Android en iOS — of op het web, als dat nodig is.</p> -->
             <!-- <p>We leveren de app netjes af en zorgen dat deze gebruiksklaar is op Android en iOS.</p> -->
         </div>
 
         <div class="feature-card">
             <h3>Aftercare "(& Updates)"</h3>
+            <img src="images/it-department.png" alt="Aftercare en Updates" class="faseAfbeelding"/>
+            <!--
             <p>Ook na oplevering zijn we beschikbaar. Voor updates, extra features of gewoon als sparringpartner. Je
-                staat er dus niet ineens alleen voor.</p>
+                staat er dus niet ineens alleen voor.</p>-->
             <!-- <p>Na oplevering blijven we beschikbaar voor updates, kleine verbeteringen en ondersteuning.</p> -->
         </div>
     </section>
@@ -2469,8 +2488,9 @@
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
             <h2>Contact</h2>
-            <p><strong>Email:</strong> blacklions.contact.team@gmail.com</p>
-            <p><strong>Telefoon:</strong> +31 6 42348809</p>
+            <p><strong style="color:rgba(214, 125, 0, 1)">Contactpersoon:</strong> <br>Nawaaz</p>
+            <p><strong style="color:rgba(214, 125, 0, 1)">Email:</strong> blacklions.contact.team@gmail.com</p>
+            <p><strong style="color:rgba(214, 125, 0, 1)">Telefoon:</strong> <br> +31 6 42348809</p>
         </div>
     </div>
 </body>
