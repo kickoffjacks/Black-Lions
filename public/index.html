@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="nl">
+    
 
 <head>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" defer>
@@ -14,6 +15,9 @@
             box-sizing: border-box;
             margin: 0;
             padding: 0;
+        }
+        :root{
+            --gridAreaColor: rgb(24, 127, 116);
         }
 
         html,
@@ -31,8 +35,6 @@
             overflow-y: scroll;
             overflow-x: hidden;
 
-            /* background: linear-gradient(to bottom, rgba(214, 125, 0, 1.0) 25%, rgb(20, 20, 20) 50%, rgb(0, 0, 0)); */
-            /* background-attachment: fixed; */
             background-size: cover;
             height: 100%;
         }
@@ -116,7 +118,7 @@
             color: #fff;
             /* border-radius: 5px; */
 
-            border-bottom: 3px solid rgba(214, 125, 0, 1.0);
+            border-bottom: 3px solid var(--gridAreaColor);
             transition: border-bottom 0.5s ease;
             /* transform: translateX(-5px); */
             position: relative
@@ -132,7 +134,7 @@
             /* Start met een breedte van 0 */
             height: 2px;
             /* Hoogte van de border */
-            background-color: rgba(214, 125, 0, 1.0);
+            background-color: var(--gridAreaColor);
             /* Kleur van de border */
             transition: width 0.5s ease;
             /* Soepele overgang */
@@ -251,7 +253,7 @@
         .feature-card:hover {
             /* border-color: #d67d00; */
             transform: translateY(-5px);
-            box-shadow: 0px 4px 10px  rgba(214, 125, 0, 0.7);
+            box-shadow: 0px 4px 10px  var(--gridAreaColor);
         }
 
         .feature-card h3 {
@@ -283,7 +285,6 @@
         .firstContainer.expanded {
             height: 1200px;
             width: 100%;
-            background-color: "rgb(0, 128, 128)";
             justify-content: center;
             align-items: center;
 
@@ -437,7 +438,7 @@
         }
 
         .versturenStyle {
-            background-color: rgb(214, 125, 0);
+            background-color: rgb(24, 127, 116);
             position: relative;
             /* top: 1px; */
 
@@ -462,7 +463,7 @@
             color: #fff;
             padding: 10px 10px;
             border-radius: 17px;
-            border-color: rgb(214, 125, 0);
+            border-color: rgb(24, 127, 116);
             border-width: 1px;
             border-style: solid;
             cursor: pointer;
@@ -483,7 +484,7 @@
 
         .contactButton:hover {
             background-color: rgba(0, 0, 0, 0.3);
-            border-color: #d67d00;
+            border-color: rgb(24, 127, 116);
             border-width: 2px;
             /* transform: translateZ(-5px); */
             transition: background-color 0.5s ease;
@@ -550,7 +551,7 @@
             z-index: 10;
 
             padding-left: 40px;
-            border-left-color: rgba(214, 125, 0, 0.7);
+            border-left-color: var(--gridAreaColor);
             border-left-width: 5px;
             border-left-style: solid;
             align-self: center;
@@ -615,13 +616,13 @@
 
             /* transform: translateX(7px);
             transition: transform 0.5s ease; */
-            /* box-shadow: 0 4px 10px 2px rgb(214, 125, 0); */
+            /* box-shadow: 0 4px 10px 2px var(--gridAreaColor); */
 
 
         }
 
         .cardBox:hover {
-            box-shadow: 0 4px 10px 3px rgba(214, 125, 0, 0.7);
+            box-shadow: 0 4px 10px 3px rgb(24, 127, 116, 0.2);
             transform: translateX(5px);
             transition: transform 0.5s ease;
         }
@@ -658,10 +659,10 @@
             height: 50px;
             min-width: 100px;
             width: 100%;
-            background-color: rgb(214, 125, 0);
+            background-color: var(--gridAreaColor);
             /* justify-content: center; */
             /* align-items: center; */
-            border: 2px solid rgba(214, 125, 0, 0.7);
+            border: 2px solid var(--gridAreaColor);
             border-radius: 15px;
             color: #fff;
             font-size: 1.1rem;
@@ -706,7 +707,7 @@
         }
 
         .voorbeeldTitleText {
-            /* border-left-color: rgb(214, 125, 0);
+            /* border-left-color: var(--gridAreaColor);
             border-left-width: 10px;
             border-left-style: solid; */
             display: inline-block;
@@ -794,7 +795,7 @@
             margin-bottom: 10px;
             text-align: left;
             line-height: 1.2;
-            background: linear-gradient(to right, rgba(214, 125, 0, 1), 30%, rgba(214, 125, 0, 1));
+            background: linear-gradient(to right, var(--gridAreaColor), 30%, var(--gridAreaColor));
             /* Gradient */
             -webkit-background-clip: text;
             background-clip: text;
@@ -814,12 +815,12 @@
         }
 
         .belOnsButton {
-            background-color: rgb(214, 125, 0);
+            background-color: var(--gridAreaColor);
             color: rgb(255, 255, 255);
             width: 20vh;
             height: 5vh;
             border-radius: 17px;
-            border-color: rgb(214, 125, 0);
+            border-color: var(--gridAreaColor);
             border-width: 1px;
             cursor: pointer;
             font-size: 1.1rem;
@@ -836,7 +837,7 @@
 
         .belOnsButton:hover {
             /* background-color: rgba(20, 20, 200, 0.6); */
-            border-color: rgb(214, 125, 0);
+            border-color: var(--gridAreaColor);
             border-width: 2px;
             border-style: solid;
             transform: scale(1.05);
@@ -867,7 +868,7 @@
             width: 20vh;
             height: 5vh;
             border-radius: 17px;
-            border-color: rgb(214, 125, 0);
+            border-color: var(--gridAreaColor);
             border-width: 1px;
             border-style: solid;
             cursor: pointer;
@@ -1018,7 +1019,7 @@
             /* voor Safari */
             background-color: rgba(40, 40, 40, 0.5);
             /* achtergrondkleur van de lege box */
-            border: 2px solid rgba(214, 125, 0, 0.8);
+            border: 2px solid var(--gridAreaColor);
             /* randkleur */
             width: 18px;
             height: 18px;
@@ -1043,7 +1044,7 @@
             background-color: rgba(214, 125, 0, 1.0);
             /* transition: background-color 0.3s ease; */
             transform: scale(1.3);
-            box-shadow: 0 1px 20px rgba(214, 125, 0, 0.9);
+            box-shadow: 0 1px 20px var(--gridAreaColor);
 
         }
 
@@ -1059,10 +1060,10 @@
         }
 
         .helper-indicator2.active {
-            background-color: rgba(214, 125, 0, 1.0);
+            background-color: var(--gridAreaColor);
             /* transition: background-color 0.3s ease; */
             transform: scale(1.3);
-            box-shadow: 0 1px 20px rgba(214, 125, 0, 0.9);
+            box-shadow: 0 1px 20px var(--gridAreaColor);
 
         }
 
@@ -1128,7 +1129,7 @@
         /* .contactFormContent h3:not(.contactFormContentPageNumber) {
             color: rgb(255, 255, 255);
             font-size: 1.9rem;
-            border-left: 7px solid rgb(214, 125, 0);
+            border-left: 7px solid var(--gridAreaColor);
             border-left-style: solid;
             padding-left: 5px;
             /* margin-bottom: 10px; */
@@ -1139,7 +1140,7 @@
         #titleFormText h3 {
             color: rgb(255, 255, 255);
             font-size: 1.9rem;
-            border-left: 7px solid rgb(214, 125, 0);
+            border-left: 7px solid var(--gridAreaColor);
             border-left-style: solid;
             padding-left: 5px;
             /* margin-bottom: 10px; */
@@ -1170,7 +1171,7 @@
         .contactFormContentPageNumber {
             color: rgba(255, 255, 255, 0.3);
             font-size: 0.9rem;
-            /* border-left: 7px solid rgb(214, 125, 0);
+            /* border-left: 7px solid var(--gridAreaColor);
             border-left-style: solid; */
             /* padding-left: 5px; */
             margin-bottom: 5px;
@@ -1182,7 +1183,7 @@
         }
 
         .contactButtonNext {
-            background-color: rgb(214, 125, 0);
+            background-color: var(--gridAreaColor);
             color: rgb(255, 255, 255);
             font-weight: bold;
             font-size: 1.2rem;
@@ -1239,7 +1240,7 @@
             /* color: #fff; */
             /* padding: 10px; */
             /* border-radius: 10px; */
-            /* border-bottom: 2px solid rgb(214, 125, 0); */
+            /* border-bottom: 2px solid var(--gridAreaColor); */
             font-size: 0.9rem;
             /* height: 200px; */
             width: 300px;
@@ -2063,7 +2064,7 @@
             <header>
                 <a href="http://127.0.0.1:5500/public/" style="text-decoration: none;">
                 <h1 class="titleText">Grid Area</h1>
-                <!-- <img src="images/GridAreaLogo.png" class="logoImage"></img> -->
+                <img src="images/GridAreaLogo.png" class="logoImage"></img>
                 
                 </a>
 
@@ -2071,7 +2072,7 @@
                     <ul>
                         <li style="white-space: nowrap;"><a href="">Over Ons</a></li>
                         <li class="style_link"
-                            style="border-left: 5px solid rgba(214, 125, 0, 0.6); padding-left: 1vw; flex-wrap: nowrap; white-space: nowrap;">
+                            style="border-left: 5px solid rgba(24, 127, 116); padding-left: 1vw; flex-wrap: nowrap; white-space: nowrap;">
                             <a href="">Style</a>
                         </li>
                         <li><a href="">Processen</a></li>
@@ -2097,7 +2098,7 @@
                         <form id="contactForm" action="https://formspree.io/f/mblolboj" method="POST">
                             <div id="contactFormContainer1" class="contactFormContainer1 hidden">
 
-                                <div class="contactFormContent">x
+                                <div class="contactFormContent">
                                     <div>
                                         <!-- //terug knop erin maken -->
 
@@ -2144,7 +2145,7 @@
                                                     style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); cursor: pointer;">
                                                     Ik ga akkoord met de
                                                     <a href="#privacyverklaring"
-                                                        style="color: rgba(214, 125, 0, 1.0); text-decoration: underline;">privacyverklaring</a>.
+                                                        style="color: var(--gridAreaColor); text-decoration: underline;">privacyverklaring</a>.
                                                 </label>
                                             </div>
 
@@ -2294,7 +2295,7 @@
                     <!-- <img src="images/icon.png" alt="Icoon" /> -->
 
                     <h3 style="font-size: 22px; padding-bottom: 10px;"><span
-                            style="border-left: 6px solid #d67d00; padding-left: 4px;">Waarom</span> Bedrijven Voor Ons
+                            style="border-left: 6px solid var(--gridAreaColor); padding-left: 4px;">Waarom</span> Bedrijven Voor Ons
                         Kiezen</h3>
                         <img src="images/foto1_Team.jpg" class="uitlegfoto1" alt="Teamfoto"/>
                     <p style="font-size: 14px;">Wij bouwen apps die strak zijn, snel werken en direct waarde opleveren.
@@ -2308,7 +2309,7 @@
                 <div class="cardBox">
 
                     <h3 style="font-size: 22px; padding-bottom: 10px;"><span
-                            style="border-left: 6px solid #d67d00; padding-left: 4px;">Wat</span> Voor Apps Maken We?
+                            style="border-left: 6px solid rgb(24, 127, 116); padding-left: 4px;">Wat</span> Voor Apps Maken We?
                     </h3>
                     <p style="font-size: 14px;">Wij bouwen slimme apps voor bedrijven die willen groeien. Denk aan:
                         – Verhuurplatformen of reserveringssystemen <br>
@@ -2323,7 +2324,7 @@
             <div class="uitlegTextStructure">
                 <div class="cardBox">
                     <h3 style="font-size: 22px; padding-bottom: 10px;"><span
-                            style="border-left: 6px solid #d67d00; padding-left: 4px;">Hoe</span> Werkt Samenwerken Met
+                            style="border-left: 6px solid rgb(24, 127, 116); padding-left: 4px;">Hoe</span> Werkt Samenwerken Met
                         Ons?</h3>
                     <p style="font-size: 14px;"> We zijn jong, maar scherp.
                         Je hoeft ons niet drie keer uit te leggen wat je bedoelt — we denken proactief mee, bouwen snel
@@ -2500,9 +2501,9 @@
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
             <h2>Contact</h2>
-            <p><strong style="color:rgba(214, 125, 0, 1)">Contactpersoon:</strong> <br>Nawaaz</p>
-            <p><strong style="color:rgba(214, 125, 0, 1)">Email:</strong> blacklions.contact.team@gmail.com</p>
-            <p><strong style="color:rgba(214, 125, 0, 1)">Telefoon:</strong> <br> +31 6 42348809</p>
+            <p><strong style="color:var(--gridAreaColor)">Contactpersoon:</strong> <br>Nawaaz</p>
+            <p><strong style="color:var(--gridAreaColor)">Email:</strong> blacklions.contact.team@gmail.com</p>
+            <p><strong style="color:var(--gridAreaColor)">Telefoon:</strong> <br> +31 6 42348809</p>
         </div>
     </div>
 </body>
