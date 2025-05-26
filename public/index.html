@@ -1187,7 +1187,7 @@
             color: rgb(255, 255, 255);
             font-weight: bold;
             font-size: 1.2rem;
-            border: #d67d00 solid 2px;
+            border: var(--gridAreaColor) solid 2px;
 
             height: 50px;
             transition: all 0.3s ease;
@@ -1421,7 +1421,7 @@
             margin-bottom: 20px;
             padding-left: 5px;
 
-            border-left: #d67d00 solid 7px;
+            border-left: var(--gridAreaColor) solid 7px;
             height: 50px;
 
 
@@ -1490,6 +1490,11 @@
         }
         .close-button:hover {
             cursor: pointer;
+        }
+        .logoImage{
+            width: auto;
+            height: 50px;
+            object-fit: contain;
         }
 
         .scrollvoormeerText {
@@ -1726,8 +1731,8 @@
                 height: 40px;
             }
             .logoImage{
-                width: 100%;
-                height: auto;
+                width: auto;
+                height: 40px;
                 object-fit: contain;
                 border-radius: 10px;
                 max-width: 100%;
@@ -2063,7 +2068,7 @@
 
             <header>
                 <a href="http://127.0.0.1:5500/public/" style="text-decoration: none;">
-                <h1 class="titleText">Grid Area</h1>
+                <h1 class="titleText"></h1>
                 <img src="images/GridAreaLogo.png" class="logoImage"></img>
                 
                 </a>
