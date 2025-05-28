@@ -2,7 +2,11 @@ import './App.css';
 import Header from './components/Header'; //1
 import Home from './components/Home';//2 
 import About from './components/About'; //3
-import Footer from './components/Footer';
+import ScreenshotsSection from './components/ScreenshotsSection'; //4
+import Process from './components/Process'; //5
+import Contact from './components/Contact'; //6
+import Footer from './components/Footer'; //7
+import SectionWrapper from './components/compUse/SectionWrapper';
 
 //Volgorde van componenten:
 // 1. Header
@@ -15,12 +19,36 @@ import Footer from './components/Footer';
 
 function App() {
   return (
-   <>
-   
-   <Header />
-   <About />
-   <Footer />
-   </>
+    <>
+
+        <Header />
+      <div className="mainContent">
+
+        <SectionWrapper>
+          <Home />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <About />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <ScreenshotsSection />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Process />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Contact />
+        </SectionWrapper>
+
+        <SectionWrapper>
+          <Footer />
+        </SectionWrapper>
+      </div>
+    </>
   );
 }
 

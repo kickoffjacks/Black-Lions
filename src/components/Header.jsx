@@ -7,7 +7,7 @@ function Header(){
 return(
     <header className="header-container">
         
-        <h1 style={{color: 'white'}}>Welcome bij GridArea </h1>
+        <h1 className="headerText">Welcome bij GridArea </h1>
     </header>
 )
 
