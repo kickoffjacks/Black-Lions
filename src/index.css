@@ -1,5 +1,6 @@
 :root{
   --gridareaColor: rgb(24, 127, 116);
+  --sectionHeight: 65vh;
 }
 
 body {
@@ -12,7 +13,7 @@ body {
     overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  background-color: rgb(20, 20, 20);
+  background-color: rgb(5, 5, 5);
 
 }
 

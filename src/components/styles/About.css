@@ -1,0 +1,14 @@
+.aboutContainer {
+    display: flex;
+    height: var(--sectionHeight);
+}
+
+.aboutContent {
+    height: 90%;
+    width: 100%;
+   background: linear-gradient(rgba(60,60, 60)) 10%, var(rgba(--gridareaColor)) 50%, (var(rgba(--gridareaColor), 0.2) 100%);
+    border-radius: 20px;
+    border: 1px solid rgb(80, 83, 84);
+
+    padding: 10px;
+}
