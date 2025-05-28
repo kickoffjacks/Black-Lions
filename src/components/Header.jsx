@@ -1,13 +1,14 @@
 import React from 'react';
+import './styles/Header.css';
+
 
 
 function Header(){
 return(
-    <Header>
-        <h1> Welkom Bij GridArea</h1>
-        <nav>
-        </nav>
-    </Header>
+    <header className="header-container">
+        
+        <h1 style={{color: 'white'}}>Welcome bij GridArea </h1>
+    </header>
 )
 
 }
