@@ -1,6 +1,6 @@
 import React from 'react';
 import './styles/Home.css';
-import gridareaLogo2 from '/Users/AppProjectss/gridarea/src/assets/gridareametfiguur.png';
+import './styles/Home.css'
 
 export default function Home() {
   return (

@@ -1,8 +1,7 @@
 import React from 'react';
 import './styles/Header.css';
 import SectionWrapper from './compUse/SectionWrapper';
-import gridareaLogo from '/Users/AppProjectss/gridarea/src/assets/gridareafiguur.png';
-import gridareaLogo2 from '/Users/AppProjectss/gridarea/src/assets/gridareametfiguur.png';
+import gridareafiguur from '/Users/mitchelsullivan/Grid Area/src/components/styles/Header.css';
 
 
 
@@ -14,7 +13,7 @@ return(
         <SectionWrapper>
 
         {/* <h1 className="headerText">Welcome bij GridArea </h1> */}
-        <img src={gridareaLogo} alt="GridArea Logo" className="headerLogo" />
+        <img src={gridareafiguur} alt="GridArea Logo" className="headerLogo" />
 
         </SectionWrapper>
     </header>
