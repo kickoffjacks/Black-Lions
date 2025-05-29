@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Home.css';
-import './styles/Home.css'
+import GridAreaLogoTextOnlyWhite from '../assets/GridAreaLogoTextOnlyWhite.png'
+
 
 export default function Home() {
   return (
@@ -8,9 +9,7 @@ export default function Home() {
 
       <div className="homeContent">
         <div style={{ display: 'flex', flexDirection: "row" }}>
-        {/* hier moet de logo komen te staan */}
-          <h2 className="title">GridArea</h2> 
-          <p>For Commercial use</p>
+         <a href="http://localhost:3000/"> <img src={GridAreaLogoTextOnlyWhite} className="gridAreaLogoTextOnlyWhite" alt="Grid Area Logo"/> </a>
         </div>
 
         <div style={{ width: "50%", }}>

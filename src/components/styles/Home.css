@@ -50,3 +50,10 @@
     height: 130px;
     object-fit: contain;
 }
+
+.gridAreaLogoTextOnlyWhite {
+height: 80px; /* Adjust size as needed */
+  width: auto; /* Maintain aspect ratio */
+  object-fit: contain; /* Ensure proper scaling */
+  margin-right: 15px;
+}
