@@ -51,6 +51,7 @@
   font-weight: bold;
   color: #ffff;
   border: 3px solid rgba(0,209,194);
+   background: linear-gradient(to top, rgba(0, 214, 200, 0.175)0%,rgba(0, 214, 200, 0)50%);
   border-radius: 2px;
   overflow: hidden;
   cursor: pointer;
