@@ -15,7 +15,7 @@ export default function Home() {
         <div style={{ width: "50%", }}>
           <p className="explainText">Jouw website/app maken wij voor jou</p>
         </div>
-        <button className="startButton">Creëer mijn app/website</button>
+        <button className="startButton">Creëer mijn App/Website</button>
 
 
       </div>
