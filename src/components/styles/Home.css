@@ -1,0 +1,52 @@
+.homeContainer {
+    height: var(--sectionHeight);
+
+
+}
+
+.homeContent {
+    display: flex;
+    flex-direction: column;
+    height: 40vh;
+    position: relative;
+    top: 20%;
+}
+
+.title {
+    color: white;
+    font-size: 20px;
+}
+.explainText{
+    color: white; 
+   font-size: 30px;
+   font-weight: bold;
+}
+.startButton{
+    height: 60px;
+    width: 100px;
+    padding: 10px 20px;
+    color: white;
+    font-size: 1.6rem;
+    font-weight: bold;
+    background-color: var(--gridareaColor);
+    border-radius: 35px;
+    cursor: pointer;
+
+    border: 1px solid var(--gridareaColor);
+    transition: all 0.3s ease; 
+}
+.startButton:hover{
+  background-color: rgba(24, 127, 116, 0.8);
+  transition: all 0.3s ease; 
+  transform: scale(1.05);
+}
+
+
+
+
+
+
+.homeLogo {
+    height: 130px;
+    object-fit: contain;
+}
