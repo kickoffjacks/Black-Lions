@@ -1,11 +1,18 @@
 import React from 'react';
+import '/Users/AppProjectss/gridarea/src/components/styles/ScreenShotsSection.css';
 
 
 function ScreenshotsSection() {
     return (
-        <div style={{ color: 'white' }}>
-            <h2>Screenshots</h2>
-            <p>Here you can add screenshots of your application.</p>
+        <div className="ScreenshotContainer">
+            <div className='screenshotContent'>
+
+            <h1>Screenshot</h1>
+
+            <img src=""></img>
+            </div>
+            
+         
         </div>
     );
 }

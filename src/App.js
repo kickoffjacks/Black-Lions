@@ -21,9 +21,9 @@ function App() {
   return (
     <>
 
-    
 
-        <Header />
+
+      <Header />
       <div className="mainContent">
 
         <SectionWrapper>
@@ -31,11 +31,11 @@ function App() {
         </SectionWrapper>
 
         <SectionWrapper>
-          <About />
+          <ScreenshotsSection />
         </SectionWrapper>
 
         <SectionWrapper>
-          <ScreenshotsSection />
+          <About />
         </SectionWrapper>
 
         <SectionWrapper>

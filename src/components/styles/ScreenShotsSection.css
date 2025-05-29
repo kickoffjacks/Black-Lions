@@ -1,0 +1,14 @@
+.ScreenshotContainer {
+    display: flex;
+    height: var(--sectionHeight);
+    width: 100%;
+    border: 1px solid var(--gridareaColor);
+    border-radius: 15px;
+    background-color: var(--gridareaColor);
+    padding: 10px
+}
+
+.screenshotContent {
+    display: flex;
+    padding: 100px;
+}

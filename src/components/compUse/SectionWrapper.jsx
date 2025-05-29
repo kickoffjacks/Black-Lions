@@ -6,6 +6,7 @@ function SectionWrapper({ children }) {
             width: '85%',
             justifySelf: 'center',
             margin: '0 auto',
+            marginBottom: '10px',
 
         }}>
             {children}
