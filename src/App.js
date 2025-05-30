@@ -7,6 +7,7 @@ import Process from './components/Process';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 import SectionWrapper from './components/compUse/SectionWrapper';
+import gridBackground from './components/compUse/gridbackground';
 import { useEffect, useRef } from 'react';
 
 function App() {
@@ -29,9 +30,13 @@ function App() {
   }, []);
 
   return (
-    <div className="app-container">
-      <div className="app-background-grid1" ref={backgroundRef1}></div>
-      <Header />
+    //gebruik hier alleen components, geen HTML tags zoals <div> of <p>
+
+    <div className="main-container">
+      {/* <gridBackground /> */} //dit was voor de test
+
+
+      <Header /> */
       <div className="mainContent">
         <SectionWrapper>
           <Home />
@@ -42,8 +47,6 @@ function App() {
         <SectionWrapper>
           <About />
         </SectionWrapper>
-        {/* Plaats Grid 2 hier, maar zorg dat het goed gepositioneerd is */}
-        <div className="app-background-grid2" ref={backgroundRef2}></div>
         <SectionWrapper>
           <Process />
         </SectionWrapper>
@@ -54,7 +57,7 @@ function App() {
           <Footer />
         </SectionWrapper>
       </div>
-    </div>
+    // </div>
   );
 }
 

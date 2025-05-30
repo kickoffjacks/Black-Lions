@@ -1,8 +1,8 @@
 import React from 'react';
-import '/Users/mitchelsullivan/Grid Area/src/components/styles/ScreenShotsSection.css';
-import demofoto1 from '/Users/mitchelsullivan/Grid Area/src/assets/demoFoto1.PNG';
-import demofoto2 from '/Users/mitchelsullivan/Grid Area/src/assets/demoFoto2.PNG';
-import demofoto3 from '/Users/mitchelsullivan/Grid Area/src/assets/demoFoto3.PNG';
+import './styles/ScreenShotsSection.css';
+import demofoto1 from '../assets/demoFoto1.PNG';
+import demofoto2 from '../assets/demoFoto2.PNG';
+import demofoto3 from '../assets/demoFoto3.PNG';
 
 
 function ScreenshotsSection() {

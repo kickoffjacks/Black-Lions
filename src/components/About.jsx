@@ -1,5 +1,5 @@
 import React from 'react';
-import '/Users/mitchelsullivan/Grid Area/src/components/styles/About.css';
+import './styles/About.css';
 
 function About() {
     return (
