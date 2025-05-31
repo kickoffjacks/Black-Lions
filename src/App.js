@@ -33,26 +33,36 @@ function App() {
     //gebruik hier alleen components, geen HTML tags zoals <div> of <p>
 
     <div className="main-container">
-      {/* <gridBackground /> */} //dit was voor de test
+      {/* <gridBackground /> */} 
 
 
-      <Header /> */
+      <Header /> 
       <div className="mainContent">
+
+
         <SectionWrapper>
           <Home />
         </SectionWrapper>
+
+
+        
+
         <SectionWrapper>
           <ScreenshotsSection />
         </SectionWrapper>
+
         <SectionWrapper>
           <About />
         </SectionWrapper>
+
         <SectionWrapper>
           <Process />
         </SectionWrapper>
+
         <SectionWrapper>
           <Contact />
         </SectionWrapper>
+
         <SectionWrapper>
           <Footer />
         </SectionWrapper>
