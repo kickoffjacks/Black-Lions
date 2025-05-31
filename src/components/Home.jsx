@@ -1,6 +1,7 @@
 import React from 'react';
 import './styles/Home.css';
-import gridareaLogo2 from '/Users/AppProjectss/gridarea/src/assets/gridareametfiguur.png';
+import GridAreaLogoTextOnlyWhite from '../assets/GridAreaLogoTextOnlyWhite.png'
+
 
 export default function Home() {
   return (
@@ -8,15 +9,13 @@ export default function Home() {
 
       <div className="homeContent">
         <div style={{ display: 'flex', flexDirection: "row" }}>
-        {/* hier moet de logo komen te staan */}
-          <h2 className="title">GridArea</h2> 
-          <p>For Commercial use</p>
+         <a href="http://localhost:3000/"> <img src={GridAreaLogoTextOnlyWhite} className="gridAreaLogoTextOnlyWhite" alt="Grid Area Logo"/> </a>
         </div>
 
         <div style={{ width: "50%", }}>
           <p className="explainText">Jouw website/app maken wij voor jou</p>
         </div>
-        <button className="startButton">Start</button>
+        <button className="startButton">Creëer mijn App/Website</button>
 
 
       </div>

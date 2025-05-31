@@ -1,10 +1,10 @@
 .ScreenshotContainer {
     display: flex;
-    height: var(--sectionHeight);
+    height: 720px;
     width: 100%;
     border: 1px solid var(--gridareaColor);
     border-radius: 15px;
-    background-color: var(--gridareaColor);
+    background: linear-gradient(to top, rgba(0, 214, 200, 0.175)0%,rgba(0, 214, 200, 0)50%);
     padding: 10px
 }
 
@@ -12,16 +12,19 @@
     display: flex;
     flex-direction: column;
     padding: 100px;
+    width: 90%;
 }
 .screenshotImage{
     width: 500px;
     height: 500px;
     object-fit: contain;
     padding: 10px;
+    border-radius: 10px;
+    
 }
 .screenshotContentBox{
     display: flex;
     flex-direction: row;
     gap: 5px;
-
+    
 }
