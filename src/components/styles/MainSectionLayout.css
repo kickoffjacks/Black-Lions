@@ -1,0 +1,11 @@
+.mainSectionContainer{
+    display: flex;
+    background-color: rgba(40, 40, 40, 0.3);
+    height: auto;
+    width: 100%;
+    padding-top: 20px;
+    padding-bottom: 20px;
+
+    border-top: 4px solid rgb(24, 127, 116, 0.1);
+
+}
