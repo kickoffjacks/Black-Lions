@@ -250,6 +250,7 @@
         .feature-card:hover {
             /* border-color: #d67d00; */
             transform: translateY(-5px);
+            box-shadow: 0px 4px 10px  rgba(214, 125, 0, 0.7);
         }
 
         .feature-card h3 {
@@ -412,45 +413,9 @@
             /* padding-right: 500px; */
         }
 
-        .contactButtonNext {
-            background-color: rgba(214, 125, 0, 0.0);
-            color: #fff;
-            padding: 10px 10px;
-            border-radius: 17px;
-            border-color: rgb(214, 125, 0);
-            border-width: 1px;
-            border-style: solid;
-            cursor: pointer;
-            font-size: 1.1rem;
-            margin-top: 20px;
-            margin-left: 40px;
-            width: 160px;
-            height: 50px;
-            font-weight: bold;
 
-            display: flex;
-            gap: 5px;
-            justify-content: center;
-            align-items: center;
-            transition: background-color 0.5s ease;
 
-            position: relative;
-            right: 40px;
-            bottom: 60px;
-            transition: all 0.5s ease;
-            transform: scale(1.00);
 
-        }
-
-        .contactButtonNext:hover {
-            background-color: rgba(20, 20, 20, 0.6);
-            /* border-color: #d67d00; */
-            /* border-width: 2px; */
-            /* transform: translateZ(-5px); */
-            transition: all 0.5s ease;
-            transform: scale(1.01);
-
-        }
 
         .helpCard {
             height: 500px;
@@ -474,10 +439,22 @@
             background-color: rgb(214, 125, 0);
             position: relative;
             /* top: 1px; */
-            right: 45px;
-            margin-top: 50px;
+
 
         }
+
+        .checkVersturenContainer {
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            gap: 2px;
+            position: relative;
+            right: 60px;
+            margin-top: 10px;
+        }
+
+
+
 
         .contactButton {
             background-color: rgb(214, 125, 0);
@@ -538,10 +515,14 @@
             flex-direction: row;
 
             /* padding-top: 20px; */
-            padding-bottom: 20px;
+            /* padding-bottom: 20px; */
 
-            min-height: 150vh;
+            /* min-height: 120vh; */
+            max-height: 130vh;
+            height: 130vh;
             max-width: 100%;
+
+            overflow: hidden;
 
             /* margin-top: 100px; */
 
@@ -562,7 +543,7 @@
         }
 
         .uitlegTextContent2 {
-            height: 850px;
+            height: 100vh;
             width: 54%;
             background-color: rgba(20, 20, 20, 0.6);
             z-index: 10;
@@ -639,7 +620,7 @@
         }
 
         .cardBox:hover {
-            box-shadow: 0 4px 10px 3px rgba(29, 23, 14, 0.1);
+            box-shadow: 0 4px 10px 3px rgba(214, 125, 0, 0.7);
             transform: translateX(5px);
             transition: transform 0.5s ease;
         }
@@ -738,7 +719,7 @@
             text-align: center;
             /* padding: 40px 20px; */
             /* background-color: rgba(72, 39, 115, 0.732); */
-            height: 119vh;
+            height: 100vh;
             background: linear-gradient(to top, rgba(72, 39, 115, 0.3) 5%, rgba(72, 39, 115, 0.2)25%, transparent 50%);
 
             padding-top: 20px;
@@ -748,6 +729,8 @@
 
 
         }
+
+
 
         .screenshotImage {
             object-fit: cover;
@@ -810,7 +793,7 @@
             margin-bottom: 10px;
             text-align: left;
             line-height: 1.2;
-            background: linear-gradient(to right, rgba(214, 125, 0, 0.8), 30%, rgb(20, 20, 20));
+            background: linear-gradient(to right, rgba(214, 125, 0, 1), 30%, rgba(214, 125, 0, 1));
             /* Gradient */
             -webkit-background-clip: text;
             background-clip: text;
@@ -891,7 +874,14 @@
             font-weight: bold;
 
             margin-top: 2vh;
+            transition: all 0.3s ease;
 
+
+        }
+        .mailOnsButton:hover{
+            transition: background-color 0.5s ease;
+            transform: scale(1.05);
+            transition: transform 0.3s ease;
         }
 
         .contactFormContainer1 {
@@ -982,12 +972,13 @@
         .contactFormContent {
             display: flex;
             position: relative;
-            top: 20px;
+            /* top: 20px; */
             margin-right: 10px;
-            margin-left: 20px;
+            /* margin-left: 20px; */
             /* margin: 0 auto; */
             flex-direction: row;
             gap: 10px;
+
             align-items: center;
             justify-content: center;
 
@@ -1126,6 +1117,13 @@
 
         }
 
+        #screenshotContent {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-evenly;
+            gap: 5vw;
+        }
+
         /* .contactFormContent h3:not(.contactFormContentPageNumber) {
             color: rgb(255, 255, 255);
             font-size: 1.9rem;
@@ -1182,6 +1180,35 @@
             /* font-weight: bold; */
         }
 
+        .contactButtonNext {
+            background-color: rgb(214, 125, 0);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 1.2rem;
+            border: #d67d00 solid 2px;
+
+            height: 50px;
+            transition: all 0.3s ease;
+
+            width: 200px;
+            border-radius: 15px;
+
+        }
+
+        .contactButtonNext:hover {
+            background-color: rgb(20, 20, 20);
+            color: rgb(255, 255, 255);
+            font-weight: bold;
+            font-size: 1.2rem;
+
+            height: 60px;
+            transform: scale(1.02);
+            transition: all 0.3s ease;
+
+            width: 200px;
+            border-radius: 15px;
+        }
+
         .contactFormContainer1 form {
             display: flex;
             flex-direction: column;
@@ -1197,6 +1224,13 @@
             /* transform: translateY(10px); */
         }
 
+        .buttonContainer {
+            display: flex;
+            position: relative;
+            right: 40px;
+            margin-top: 10px;
+        }
+
 
 
         .contactFormContainer1 input {
@@ -1206,7 +1240,7 @@
             /* border-radius: 10px; */
             /* border-bottom: 2px solid rgb(214, 125, 0); */
             font-size: 0.9rem;
-            height: 200px;
+            /* height: 200px; */
             width: 300px;
             color: rgb(255, 255, 255);
             padding-top: 10px;
@@ -1223,20 +1257,15 @@
             /* selection-color: rgba(214, 125, 0, 1.0); */
         }
 
-        .contactFormContainer1 textarea {
+        /* .contactFormContainer1 textarea {
             background-color: rgba(40, 40, 40, 0.2);
-            /* border-radius: 10px;
-            border-color: rgba(214, 125, 0, 1.0); */
             color: #fff;
             padding: 10px;
             border-style: solid;
             resize: none;
             outline: none;
             font-family: 'Segoe UI', sans-serif;
-            /* 
-            /* position: relative;
-            bottom: 40px; */
-        }
+        } */
 
 
         .contactFormContainer2 form {
@@ -1304,6 +1333,10 @@
         .tekstNKnoppen {
             display: flex;
             flex-direction: column;
+            position: relative;
+            top: 20px;
+            /* justify-self: center; */
+            /* align-self: center; */
             /* gap: 20px; */
             /* padding-left: 40px; */
             /* padding-top: 100px; */
@@ -1311,7 +1344,7 @@
 
         .emailNTelContent {
             display: flex;
-            flex-direction: row;
+            flex-direction: column;
             gap: 10px;
 
             /* min-width: 700px; */
@@ -1350,14 +1383,46 @@
             display: flex;
         }
 
-        .buttonContainer {
-            padding-top: 20px;
-            padding-bottom: 20px;
-            display: flex;
-        }
+
 
         #textArea1 {
-            width: 600px;
+            width: 400px;
+            border-radius: 10px;
+            scrollbar-width: thin;
+            scrollbar-color: rgba(255, 255, 255, 0.2);
+            background-color: rgba(20, 20, 20, 0.2);
+            resize: none;
+            outline: none;
+            font-family: 'Segoe UI', sans-serif;
+            padding: 10px;
+            border-style: solid;
+            color: #fff;
+        }
+
+        #textArea1::-webkit-scrollbar {
+            width: 3px;
+        }
+
+        #textArea1::-webkit-scrollbar-track {
+            background: transparent !important;
+        }
+
+        #textArea1::-webkit-scrollbar-thumb {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            border: none;
+        }
+
+        .formTitleText {
+            color: rgb(255, 255, 255);
+            font-size: 1.9rem;
+            margin-bottom: 20px;
+            padding-left: 5px;
+
+            border-left: #d67d00 solid 7px;
+            height: 50px;
+
+
         }
 
 
@@ -1415,15 +1480,41 @@
 
         .close-button {
             position: absolute;
-            top: 20px;
-            right: 30px;
+            top: 200px;
+            right: 600px;
             font-size: 2rem;
             color: white;
+            cursor: pointer;
+        }
+        .close-button:hover {
             cursor: pointer;
         }
 
         .scrollvoormeerText {
             opacity: 0.0;
+        }
+        .uitlegfoto1{
+            width: 50%;
+            height: 50%;
+            max-width: 100vw;
+            max-height: 100vh;
+            border-radius: 10px;
+        }
+
+        .formInput:-webkit-autofill {
+            -webkit-box-shadow: 0 0 0px 1000px rgba(20, 20, 20, 0.2) inset !important;
+            -webkit-text-fill-color: #ffffff !important;
+            color: #ffffff !important;
+            caret-color: #ffffff;
+            transition: background-color 9999s ease-out, color 9999s ease-out;
+        }
+
+        .faseAfbeelding {
+            width: 150px;
+            height: 150px;
+            filter: invert(1);
+            margin-left: 15rem;
+
         }
 
         /* Tablets */
@@ -1565,6 +1656,14 @@
 
             }
 
+            .contactFormContentDiv {
+                display: flex;
+                flex-direction: row;
+                position: relative;
+                right: 20px;
+                flex-wrap: wrap;
+            }
+
             .contactFormContainer2 {
                 width: 100vw;
                 margin-left: 15vw;
@@ -1595,6 +1694,36 @@
 
 
             }
+
+            .formLabel {
+                font-size: 0.9rem;
+                /* height: 5px; */
+                color: rgba(255, 255, 255, 1.0);
+                font-weight: bold;
+            }
+
+            .formInput {
+                /* height: 10px; */
+                width: 40px;
+            }
+
+            .checkVersturenContainer {
+                align-items: center;
+                display: flex;
+                flex-direction: column;
+                gap: 2px;
+                position: relative;
+                right: 10px;
+                margin-top: 10px;
+
+            }
+
+            .formTitleText {
+                font-size: 1.5rem;
+                margin-bottom: 10px;
+                height: 40px;
+            }
+
 
             .meerWetenContent {
                 flex-direction: row;
@@ -1653,28 +1782,28 @@
 
 
             .screenshotImage {
-                width: 100%!important;
-                height: auto!important;
-                object-fit: contain!important;
+                width: 100% !important;
+                height: auto !important;
+                object-fit: contain !important;
 
             }
 
             .screenshotContentBlock {
-                /* display: flex; */
-                /* flex-direction: column; */
-                flex: 0 0 90%;
+                display: flex;
+                flex-direction: row;
+                scroll-snap-align: start;
+                flex: 0 0 90vw;
                 /* scroll-snap-align: center !important; */
                 /* width: 80vw !important; */
                 /* Of 90vw afhankelijk van spacing */
-                max-width: 90% !important;
-                min-width: 90%;
-                scroll-snap-align: start;
+                max-width: 90vw !important;
+                min-width: 90vw;
                 /* background: rgba(255, 0, 0, 0.1); */
                 /* border: 1px dashed red; */
 
 
                 /* gap: 40px; */
-                /* justify-content: flex-start; */
+                /* justify-content: space-evenly; */
                 /* align-items: center; */
             }
 
@@ -1683,9 +1812,9 @@
             .screenshotContentBlock img {
                 width: 100%;
                 height: auto;
-                object-fit: cover;
+                object-fit: contain;
                 border-radius: 10px;
-                max-width: 100%
+                max-width: 100%;
             }
 
             .features {
@@ -1720,7 +1849,7 @@
                 overflow: visible;
                 /* margin-top: 30px; */
                 /* gap: -1000px; */
-                min-height: 125vh;
+                min-height: 110vh;
                 /* margin-bottom: 0vh; */
                 /* overflow: hidden; */
                 /* gap: 20px; */
@@ -1794,11 +1923,7 @@
                 justify-content: center;
             }
 
-            #backButton {
-                position: relative;
-                right: 1vh;
 
-            }
 
             .firstContentPositionExpended {
                 /* width: 1000px;  */
@@ -1816,9 +1941,9 @@
                 margin: 0 auto !important;
                 margin-top: 100vh !important;
                 /* margin-bottom: 100vh !important; */
-                padding: 20px !important;
-                height: auto !important;
-                min-height: 170vh !important;
+                padding: 0 20px !important;
+                height: 100px !important;
+                min-height: 140vh !important;
                 border-radius: 20px !important;
                 z-index: 900 !important;
 
@@ -1833,58 +1958,28 @@
                 display: flex;
                 overflow-x: auto;
                 overflow-y: hidden;
-                /* scroll-snap-type: x mandatory; */
-                /* -webkit-overflow-scrolling: touch; */
-                /* gap: 20px; */
-                padding-left: 10px;
-                padding-top: 20px;
-                transform: none !important;
-                position: static !important;
-
+                scroll-snap-type: x mandatory;
+                -webkit-overflow-scrolling: touch;
                 height: auto !important;
-                /* height: auto!important; */
                 min-height: 100vh;
                 max-height: none;
                 width: 100vw !important;
-                box-sizing: border-box!important;
-                /* max-height: none; */
-                /* width: 100vw; */
-                gap: 20px !important;
+                max-width: 100vw !important;
+                box-sizing: border-box !important;
+                gap: 5vw !important;
                 flex-direction: row;
-                /* padding-top: 400px; */
-                padding-bottom: 40px;
-                padding-right: 10px;
-                padding: 0 10px 40px 10px;
+                padding: 0 5vw;
                 -webkit-overflow-scrolling: touch;
-                /* right: 90vw; */
-                /* top: 1vh; */
-                /* touch-action: pan-x; */
-
-                /* overflow-x: auto; */
-                /* scroll-snap-type: x mandatory; */
-                /* -webkit-overflow-scrolling:  */
-
 
             }
-
-            /* .screenshotContentBlock {
-                flex: 0 0 80%;
-                scroll-snap-align: center;
-                max-width: 80%;
-                min-width: 80%;
-
-            } */
 
             #screenshotContentBlock img {
                 width: 100%;
                 height: auto;
                 object-fit: cover;
+                border-radius: 10px;
+                max-width: 100%;
             }
-
-            /* .firstContentPosition{
-                 height: 1000px;
-
-            } */
 
             html {
                 font-size: 97%;
@@ -1957,8 +2052,9 @@
 
 
             <header>
-
+                <a href="http://127.0.0.1:5500/public/" style="text-decoration: none;">
                 <h1 class="titleText">Black Lions</h1>
+                </a>
 
                 <nav>
                     <ul>
@@ -1990,75 +2086,64 @@
                         <form id="contactForm" action="https://formspree.io/f/mblolboj" method="POST">
                             <div id="contactFormContainer1" class="contactFormContainer1 hidden">
 
-                                <div class="contactFormContent">
+                                <div class="contactFormContent">x
                                     <div>
                                         <!-- //terug knop erin maken -->
-                                        <div
-                                            style="display:flex; flex-direction: row; position: relative; right: 20px; flex-wrap: wrap;">
 
-                                            <button type="button" id="backButton" style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; position: relative; 
-                                    right: 40px; bottom: 15px; transform: scale(1.5);">
-                                                <i class="fas fa-chevron-left"></i>
-
-                                            </button>
-
-                                            <div id="titleFormText2"
-                                                style="display: flex; flex-direction: column; margin-bottom: 10px;">
-
-                                                <h3>Wat voor app wil je maken?</h3>
-                                                <h4 class="contactFormContentPageNumber">Pagina 1 van 2.</h4>
-
-                                            </div>
-                                        </div>
 
                                         <div class="emailNTelContent">
 
-                                            <div style="display: flex; flex-direction: column; height: 100px; ">
-                                                <h5 class="inputTitle">Voornaam:</h5>
+                                            <h3 class="formTitleText"> Wat voor app wil je?</h3>
+                                            <div style="display: flex; flex-direction: column; height: 70px;">
 
-                                                <input name="voornaam" type="text" placeholder="Koen" required><br><br>
+                                                <h5 class="formLabel">Naam:</h5>
+                                                <input class="formInput" name="voornaam" type="text" placeholder="Jouw naam" required>
                                             </div>
 
-                                            <div style="display: flex; flex-direction: column; height: 100px;">
-                                                <h5 class="inputTitle">Achternaam:</h5>
 
-                                                <input name="achternaam" type="text" placeholder="Kraag"
-                                                    required><br><br>
+                                            <div style="display: flex; flex-direction: column; height: 70px;">
+                                                <h5 class="formLabel">E-mail:</h5>
+                                                <input class="formInput" name="email" type="email"
+                                                    placeholder="Jouw e-mail" required>
                                             </div>
-                                        </div>
-
-                                        <div class="emailNTelContent">
-                                            <div style="display: flex; flex-direction: column; height: 100px;">
-                                                <h5 class="inputTitle">E-mail:</h5>
-                                                <input name="email" type="email" placeholder="Je e-mail"
-                                                    required><br><br>
-                                            </div>
-                                            <div style="display: flex; flex-direction: column; height: 100px;">
-                                                <h5 class="inputTitle">Telefoon nummer:</h5>
-                                                <input name="telefoonnummer" type="tel" placeholder="06 12345678"
-                                                    required><br><br>
+                                            <div style="display: flex; flex-direction: column; height: 70px;">
+                                                <h5 class="formLabel">Telefoon:</h5>
+                                                <input class="formInput" name="phone" type="number"
+                                                    placeholder="06 12345678" required>
                                             </div>
                                         </div>
+
+
 
 
                                         <div style="display: flex; flex-direction: column; height: 100px;">
-                                            <h5>Woonplaats:</h5>
-                                            <input name="Plaats" type="text" placeholder="Utrecht" required><br><br>
-                                        </div>
-                                        <div style="display: flex; flex-direction: column; height: 100px;">
-                                            <h5>Geboortedatum:</h5>
-                                            <input name="geboortedatum" id="geboortedatum" type="text"
-                                                placeholder="Selecteer je geboortedatum" style="height: 40px;" required>
-
+                                            <h5 class="formLabel">Waarmee kunnen we je helpen?:</h5>
+                                            <textarea name="beschrijving" cols="2" placeholder="Beschrijf je app"
+                                                rows="8" id="textArea1"></textarea>
                                         </div>
 
 
-                                        <!-- Maak een icoontje met een hover zodat ze een idee hebben van wat ze neer kunnen schrijven -->
+
+                                        <div class="checkVersturenContainer">
+                                            <div>
+
+                                                <input type="checkbox" id="privacyCheckbox" class="privacy-checkbox"
+                                                    required>
+                                                <label for="privacyCheckbox"
+                                                    style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); cursor: pointer;">
+                                                    Ik ga akkoord met de
+                                                    <a href="#privacyverklaring"
+                                                        style="color: rgba(214, 125, 0, 1.0); text-decoration: underline;">privacyverklaring</a>.
+                                                </label>
+                                            </div>
+
+                                            <div class="buttonContainer">
+                                                <button type="submit"
+                                                    class="contactButtonNext versturenStyle">Versturen</button>
+                                            </div>
+                                        </div>
                                         <!-- <textarea cols="2" placeholder="Beschrijf je app" rows="5" style="width: 100%"></textarea> -->
-                                        <div class="buttonContainer">
-
-                                            <button type="button" class="contactButtonNext">Volgende</button>
-                                        </div>
+                                        <!-- en nog een functie ervoor gaan maken -->
                                     </div>
 
 
@@ -2083,92 +2168,79 @@
                             </div> -->
                                 </div>
                             </div>
+                        </form>
 
-                            <!-- step2 -->
-                            <div id="contactFormContainer2" class="contactFormContainer2 hidden">
+                        <!-- step2 -->
+                        <div id="contactFormContainer2" class="contactFormContainer2 hidden">
 
-                                <div class="contactFormContent">
-                                    <!-- //terug knop erin maken -->
-
-
-                                    <div class="contactFormContentContentDiv">
+                            <div class="contactFormContent">
+                                <!-- //terug knop erin maken -->
 
 
-                                        <div style="display:flex; flex-direction: row; position: relative; ">
+                                <div class="contactFormContentContentDiv">
 
-                                            <button type="button" id="backButton2"
-                                                style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; position: relative; right: 40px; top: 35px; transform: scale(1.7);">
-                                                <i class="fas fa-chevron-left"></i>
 
-                                            </button>
+                                    <div style="display:flex; flex-direction: row; position: relative; ">
+
+                                        <button type="button" id="backButton2"
+                                            style="background: none; border: none; color: white; font-size: 1.5rem; cursor: pointer; position: relative; right: 40px; top: 35px; transform: scale(1.7);">
+                                            <i class="fas fa-chevron-left"></i>
+
+                                        </button>
+                                    </div>
+
+                                    <div id="titleFormText" style="margin-bottom: 10px;">
+                                        <h3>Wat voor app wil je maken?</h3>
+                                        <h4 class="contactFormContentPageNumber">Pagina 2 van 2.</h4>
+                                    </div>
+
+
+                                    <div class="emailNTelContent" style="display: flex; flex-direction: row;">
+
+                                        <div style="display: flex; flex-direction: column; height: 80px;">
+                                            <h5 class="inputTitle">Naam van App:</h5>
+
+                                            <input name="naamVanApp" type="text" placeholder="Instagram"
+                                                required><br><br>
                                         </div>
 
-                                        <div id="titleFormText" style="margin-bottom: 10px;">
-                                            <h3>Wat voor app wil je maken?</h3>
-                                            <h4 class="contactFormContentPageNumber">Pagina 2 van 2.</h4>
+                                        <div style="display: flex; flex-direction: column; height: 100px; width: 100%;">
+                                            <h5 class="inputTitle">Type App:</h5>
+
+                                            <input name="typeApp" type="text"
+                                                placeholder="reserveringsApp, Bestellingen." required><br><br>
                                         </div>
+                                    </div>
 
-
-                                        <div class="emailNTelContent" style="display: flex; flex-direction: row;">
-
-                                            <div style="display: flex; flex-direction: column; height: 80px;">
-                                                <h5 class="inputTitle">Naam van App:</h5>
-
-                                                <input name="naamVanApp" type="text" placeholder="Instagram"
-                                                    required><br><br>
-                                            </div>
-
-                                            <div
-                                                style="display: flex; flex-direction: column; height: 100px; width: 100%;">
-                                                <h5 class="inputTitle">Type App:</h5>
-
-                                                <input name="typeApp" type="text"
-                                                    placeholder="reserveringsApp, Bestellingen." required><br><br>
-                                            </div>
+                                    <div class="emailNTelContent">
+                                        <div style="display: flex; flex-direction: column; height: 80px;">
+                                            <h5 class="inputTitle">Jouw Rol:</h5>
+                                            <input name="rol" type="text" placeholder="Founder, Ceo, of anders"
+                                                required><br><br>
                                         </div>
-
-                                        <div class="emailNTelContent">
-                                            <div style="display: flex; flex-direction: column; height: 80px;">
-                                                <h5 class="inputTitle">Jouw Rol:</h5>
-                                                <input name="rol" type="text" placeholder="Founder, Ceo, of anders"
-                                                    required><br><br>
-                                            </div>
-                                            <div style="display: flex; flex-direction: column; height: 80px;">
-                                                <h5 class="inputTitle">Deadline: (optioneel)</h5>
-                                                <input name="deadline" type="tel"
-                                                    placeholder="bijv: over 6 maanden, 10 januari, voor het eind van het jaar, etc etc."><br><br>
-                                            </div>
+                                        <div style="display: flex; flex-direction: column; height: 80px;">
+                                            <h5 class="inputTitle">Deadline: (optioneel)</h5>
+                                            <input name="deadline" type="tel"
+                                                placeholder="bijv: over 6 maanden, 10 januari, voor het eind van het jaar, etc etc."><br><br>
                                         </div>
+                                    </div>
 
-                                        <div class="emailNTelContent " style="flex-direction: column; height: 500px;">
-                                            <h4 id="beschrijfJeAppTittle">Beschrijf je App:</h4>
-                                            <textarea name="beschrijving" cols="2" placeholder="Beschrijf je app"
-                                                rows="5" id="textArea1"></textarea>
+                                    <div class="emailNTelContent " style="flex-direction: column; height: 500px;">
+                                        <h4 id="beschrijfJeAppTittle">Beschrijf je App:</h4>
 
-
-                                            <div style=" align-items: center; display: flex;">
-                                                <input type="checkbox" id="privacyCheckbox" class="privacy-checkbox"
-                                                    required>
-                                                <label for="privacyCheckbox"
-                                                    style="font-size: 0.9rem; color: rgba(255, 255, 255, 0.8); cursor: pointer;">
-                                                    Ik ga akkoord met de
-                                                    <a href="#privacyverklaring"
-                                                        style="color: rgba(214, 125, 0, 1.0); text-decoration: underline;">privacyverklaring</a>.
-                                                </label>
-                                            </div>
-                                            <button type="submit"
-                                                class="contactButtonNext versturenStyle">Versturen</button>
-                                        </div>
-
+                                        <button type="submit"
+                                            class="contactButtonNext versturenStyle">Versturen</button>
                                     </div>
 
                                 </div>
+
                             </div>
+                        </div>
 
 
-                            <!-- <div style="display: flex;"> -->
+                        <!-- <div style="display: flex;"> -->
 
-                            <!-- <div class="helpCard">
+                        <!-- <div class="helpCard">
                                 <div class="titleHelperCardContent">
 
                                     <h3 style="font-size: 20px;">Helper View</h3>
@@ -2182,8 +2254,8 @@
 
 
                             </div> -->
-                            <!-- </div> -->
-                        </form>
+                        <!-- </div> -->
+
                     </div>
                 </div>
 
@@ -2206,13 +2278,14 @@
         <div class="uitlegTextContent">
 
             <div class="uitlegTextStructure">
-                <h2 style="font-size: 2.8rem; margin-bottom: 40px; text-align: start;">Slim Fris Modern.</h2>
+                <h2 style="font-size: 2.8rem; margin-bottom: 40px; text-align: start;">Slim, Fris, Modern.</h2>
                 <div class="cardBox">
                     <!-- <img src="images/icon.png" alt="Icoon" /> -->
 
                     <h3 style="font-size: 22px; padding-bottom: 10px;"><span
                             style="border-left: 6px solid #d67d00; padding-left: 4px;">Waarom</span> Bedrijven Voor Ons
                         Kiezen</h3>
+                        <img src="images/foto1_Team.jpg" class="uitlegfoto1" alt="Teamfoto"/>
                     <p style="font-size: 14px;">Wij bouwen apps die strak zijn, snel werken en direct waarde opleveren.
                         Geen ruis, maar een helder proces met een technisch sterk team dat met je meedenkt.
                         Met onze moderne stack (React Native, Supabase, TypeScript) bouwen we schaalbare oplossingen die
@@ -2312,13 +2385,13 @@
 
     <section class="screenshot" id="style">
 
-        <h2>Kleine sneak peak van onze nieuwe project...</h2>
+        <h2>Kleine sneak peak van ons nieuwe project...</h2>
 
         <div class="scrollvoormeerText">
             <h4><- <- Scroll voor meer foto's -> -></h4>
         </div>
 
-        <div id="screenshotContent" style="display: flex; gap: 10px; justify-content: space-evenly;">
+        <div id="screenshotContent">
 
             <!-- foto 1 -->
             <div class="screenshotContentBlock">
@@ -2342,40 +2415,47 @@
 
 
     <h2 id="onzeProcesText"
-        style="font-size: 2.8rem; margin-bottom: 40px; text-align: start; position: absolute; left: 10vw; margin-top: 50px;">
-        Onze Process.</h2>
+        style="font-size: 2.8rem; margin-bottom: 40px; text-align: start; position: absolute; left: 10vw; margin-top: 20px;">
+        Ons Process:</h2>
     <section class="features" id="processen">
         <div class="feature-card">
             <h3>Fase 1: Onderzoek</h3>
-            <p>We starten altijd met een goede intake. Wat wil je bereiken? Wat zijn de belangrijkste functies? Wat
+            <img src="images/Research.png" alt="Onderzoek" class="faseAfbeelding"/>
+            <!--<p>We starten altijd met een goede intake. Wat wil je bereiken? Wat zijn de belangrijkste functies? Wat
                 verwachten je gebruikers? We zetten samen een duidelijke roadmap neer. Geen aannames, maar heldere
                 doelen.
 
-            </p>
+            </p>-->
 
             <!-- <p>We onderzoeken samen de behoeften van uw bedrijf en denken mee over een passende app-oplossing.</p> -->
         </div>
 
         <div class="feature-card">
             <h3>Fase 2: Ontwikkeling</h3>
-            <p>We bouwen in korte iteraties en houden je tussendoor altijd op de hoogte. Onze stack (React Native,
+
+            <img src="images/app-development.png" alt="app-development" class="faseAfbeelding"/>
+           <!-- <p>We bouwen in korte iteraties en houden je tussendoor altijd op de hoogte. Onze stack (React Native,
                 Supabase, TypeScript) zorgt voor snelheid én schaalbaarheid. Alles met oog voor design en performance.
-            </p>
+            </p> -->
             <!-- <p>We ontwikkelen een moderne, snelle en functionele app op maat met behulp van bewezen technologieën.
             </p> -->
         </div>
 
         <div class="feature-card">
             <h3>Fase 3: Oplevering</h3>
+            <img src="images/Oplevering.png" alt="Oplevering" class="faseAfbeelding"/>
+            <!--
             <p>De app wordt zorgvuldig getest en overgedragen. We begeleiden je bij publicatie en zorgen dat alles
-                soepel draait op Android en iOS — of op het web, als dat nodig is.</p>
+                soepel draait op Android en iOS — of op het web, als dat nodig is.</p> -->
             <!-- <p>We leveren de app netjes af en zorgen dat deze gebruiksklaar is op Android en iOS.</p> -->
         </div>
 
         <div class="feature-card">
             <h3>Aftercare "(& Updates)"</h3>
+            <img src="images/it-department.png" alt="Aftercare en Updates" class="faseAfbeelding"/>
+            <!--
             <p>Ook na oplevering zijn we beschikbaar. Voor updates, extra features of gewoon als sparringpartner. Je
-                staat er dus niet ineens alleen voor.</p>
+                staat er dus niet ineens alleen voor.</p>-->
             <!-- <p>Na oplevering blijven we beschikbaar voor updates, kleine verbeteringen en ondersteuning.</p> -->
         </div>
     </section>
@@ -2408,9 +2488,10 @@
     <div id="contactModal" style="display: none;" class="modal-overlay">
         <div class="modal-content">
             <span class="close-button" onclick="closeModal()">&times;</span>
-            <h2>Neem contact met ons op</h2>
-            <p><strong>Email:</strong> blacklions.contact.team@gmail.com</p>
-            <p><strong>Telefoon:</strong> +31 6 14964500</p>
+            <h2>Contact</h2>
+            <p><strong style="color:rgba(214, 125, 0, 1)">Contactpersoon:</strong> <br>Nawaaz</p>
+            <p><strong style="color:rgba(214, 125, 0, 1)">Email:</strong> blacklions.contact.team@gmail.com</p>
+            <p><strong style="color:rgba(214, 125, 0, 1)">Telefoon:</strong> <br> +31 6 42348809</p>
         </div>
     </div>
 </body>
@@ -2429,12 +2510,9 @@
 
     const contactFormContainer1 = document.getElementById('contactFormContainer1');
     const contactFormContainer2 = document.getElementById('contactFormContainer2');
-    const contactButtonNext = document.querySelector('.contactButtonNext');
 
     const tekstNKnoppen = document.querySelector('.tekstNKnoppen');
 
-    const backButton1 = document.getElementById('backButton');
-    const backButton2 = document.getElementById('backButton2');
     const helpText = document.getElementById('helpText');
     const standaardText = `<span style="color: rgb(255, 255, 255, 0.5)";>Hou je muis over iets om extra uitleg te lezen <br> <br>We behandelen jouw App-ID vertrouwelijk. Geen samenwerking = geen gebruik van jouw gegevens. We antwoorden binnen 4 werkdagen.</span>`;
     const helperIndicator = document.getElementById('helperIndicator');
@@ -2575,48 +2653,10 @@
         });
     });
     // klik4 Terug knop 2
-    backButton2.addEventListener('click', () => {
-        // contactFormContainer2.classList.add('slide-back-out')
 
-        contactFormContainer2.classList.remove('slide-in');
-        contactFormContainer2.classList.add('slide-out');
-
-        // contactFormContainer2.classList.add('slide-out');
-
-        setTimeout(() => {
-            // contactFormContainer2.classList.remove('slide-in');
-            contactFormContainer2.classList.add('hiddenDisplay');
-            contactFormContainer1.classList.remove('hiddenDisplay');
-            void contactFormContainer1.offsetWidth;
-
-
-            contactFormContainer1.classList.add('slide-back-in');
-            contactFormContainer1.classList.add('visibleDisplay');
-
-
-
-            // contactFormContainer1.classList.remove('slide-in');
-
-
-
-        }, 1000)
-    });
 
     // klik3 Terug knop 1
-    backButton1.addEventListener('click', () => {
-        // contactFormContainer1.classList.remove('slide-in');
-        contactFormContainer1.classList.add('hiddenDisplay');
 
-
-        setTimeout(() => {
-            contactFormContainer1.classList.remove('slide-in');
-            tekstNKnoppen.classList.remove('hiddenDisplay');
-            standardContentBlock.classList.add('firstContentPosition');
-            standardContentBlock.classList.remove('firstContentPositionExpended');
-            contactFormContainer1.classList.remove('hiddenDisplay');
-
-        }, 200)
-    });
 
 
     // klik1
@@ -2639,27 +2679,7 @@
 
     });
     // klik2 Volgende knop 2
-    contactButtonNext.addEventListener('click', () => {
-        // contactFormContainer1.classList.remove('slide-in');
-        contactFormContainer2.classList.remove('hidden');
-        contactFormContainer1.classList.add('slide-out');
 
-        setTimeout(() => {
-            // contactFormContainer2.classList.add('slide-in');
-            contactFormContainer1.classList.remove('slide-in')
-
-            contactFormContainer1.classList.add('hiddenDisplay');
-        
-        }, 300)
-
-
-
-        setTimeout(() => {
-            contactFormContainer2.classList.add('slide-in');
-        });
-
-
-    })
 
     function openModal() {
         document.getElementById('contactModal').style.display = 'flex';
@@ -2672,7 +2692,7 @@
     document.querySelector('.belOnsButton').addEventListener('click', openModal);
 
 
- 
+
 </script>
 
 </html>
