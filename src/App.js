@@ -26,6 +26,7 @@ function App() {
       }
     };
 
+
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll); // Cleanup
   }, []);
@@ -76,7 +77,7 @@ function App() {
           <Footer />
         </SectionWrapper>
       </div>
-    // </div>
+    </div>
   );
 }
 
