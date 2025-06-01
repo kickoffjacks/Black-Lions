@@ -1,0 +1,35 @@
+.processContainer {
+    height: 80vh;
+    display: grid;
+    grid-template-rows: repeat(1fr, 1fr);
+    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-areas:
+        "header header"
+        "item1 item2"
+        "item3 item4"
+    ;
+    gap: 10px;
+    padding: 10px;
+    align-self: center;
+}
+
+.processBox1 {
+    height: 100%;
+    width: 80%;
+    background-color: rgb(20, 20, 20);
+    border-radius: 10px;
+    border: 1px solid rgb(32, 158, 97);
+}
+
+.processTitle {
+    grid-area: header;
+    color: seashell;
+    font-size: 2.2rem;
+}
+
+.item1 {
+    grid-area: item1;
+    background-color: rgb(205, 41, 41);
+
+
+}
