@@ -3,6 +3,7 @@ import './styles/Home.css';
 import GridAreaLogoTextOnlyWhite from '../assets/GridAreaLogoTextOnlyWhite.png'
 
 
+
 export default function Home() {
   return (
     <div className="homeContainer">
@@ -13,9 +14,9 @@ export default function Home() {
         </div>
 
         <div style={{ width: "50%", }}>
-          <p className="explainText">Jouw website/app maken wij voor jou</p>
+          <p className="explainText">Het fundament voor jouw <br/> digitale zichtbaarheid en groei.</p>
         </div>
-        <button className="startButton">Creëer mijn App/Website</button>
+        <button className="startButton">Boek een afspraak</button>
 
 
       </div>

@@ -10,6 +10,9 @@ import SectionWrapper from './components/compUse/SectionWrapper';
 import gridBackground from './components/compUse/gridbackground';
 import MainSectionLayout from './components/compUse/MainSectionLayout';
 import { useEffect, useRef } from 'react';
+import Visuals from './components/compUse/Visuals';
+
+
 
 function App() {
   const backgroundRef1 = useRef(null); // Voor Grid 1
@@ -45,7 +48,7 @@ function App() {
         <SectionWrapper>
           <Home />
         </SectionWrapper>
-
+        <Visuals style={{ width: '300px', height: '300px' }} position="top"/>
 
          {/* tijdelijke border */}
         <MainSectionLayout>
@@ -75,6 +78,7 @@ function App() {
 
         <SectionWrapper>
           <Footer />
+          <Visuals position="bottom"/>
         </SectionWrapper>
       </div>
     </div>

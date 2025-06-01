@@ -5,7 +5,7 @@
     /* text-align: center; */
     height: auto;
     /*background-color: rgb(25, 25, 25, 0.5);*/
-    background-color: rgb(20, 20, 20);
+    background-color: rgba(5, 5, 5,0);
     position: sticky;
     top: 0;
     display: flex;
@@ -13,7 +13,7 @@
     z-index: 1000;
     width: 100%;
     flex-wrap: wrap;
-    backdrop-filter: blur(7px);
+    backdrop-filter: blur(0px);
     -webkit-backdrop-filter: blur(10px);
 }
 .headerText{
