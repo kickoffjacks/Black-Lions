@@ -1,10 +1,15 @@
 import React from 'react';
+import './styles/Process.css';
 
 function Process(){
     return (
-        <div style={{ color: 'white' }}>
-            <h2>Process</h2>
-            <p>This section describes the process of developing the application.</p>
+        <div className="processContainer">
+
+            <h1 className="processTitle">Ons Process</h1>
+          <div className="processBox1"></div>
+          <div className="processBox1"></div>
+          <div className="processBox1"></div>
+          <div className="processBox1"></div>
         </div>
     );
 }
