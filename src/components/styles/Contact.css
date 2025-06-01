@@ -1,0 +1,30 @@
+.contactContainer{
+    display: flex;
+    height: 40vh;
+    width: 100%;
+}
+.contactContent{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 100%;
+}
+.CTAtext{
+    font-size: 3.2rem;
+    color: white;
+}
+.buttonContainer{
+    display: flex;
+
+}
+.belonsButton{
+    background-color: var(--gridareaColor);
+    height: 60px;
+    width: 120px;
+    color: white;
+    font-weight: bold;
+    font-size: 1.2rem;
+    border-radius: 10px;
+
+
+}
