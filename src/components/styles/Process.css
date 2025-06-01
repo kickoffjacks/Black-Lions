@@ -36,12 +36,52 @@
 }
 .processboxText{
     color: rgb(255, 255, 255);
-    font-size: 1.6rem;
+    font-size: 1.4rem;
 }
 
 .item1 {
     grid-area: item1;
     background-color: rgb(205, 41, 41);
 
+
+}
+.fase1IconsContent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.explainContent{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.explainPic{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.explainText{
+    color: rgb(255, 255, 255);
+    font-size: 1.1rem;
+    padding: 10px;
+    font-weight: 500;
+    position: relative;
+}
+.explainLineContent{
+    display: flex;
+    flex-direction: row;
+}
+.iconTitle{
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 10px;
+    height: 0;
+    position: relative;
+    bottom: 20%;
+    right: 10%;
 
 }

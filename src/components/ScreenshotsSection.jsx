@@ -9,6 +9,7 @@ function ScreenshotsSection() {
     return (
         <div className="ScreenshotContainer">
             <div className='screenshotContent'>
+                
 
                 <h1 className="sneakpeakText">Hier een kleine sneakpeak van ons nieuwe project...</h1>
 
