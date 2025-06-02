@@ -28,9 +28,7 @@
     grid-area: header;
     color: seashell;
     font-size: 2.8rem;
-    height: 0;
-    position: relative;
-    top: 20%;
+    height: 100px;
 
 
 }
