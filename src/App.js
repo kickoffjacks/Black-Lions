@@ -78,7 +78,7 @@ function App() {
 
         <SectionWrapper>
           <Footer />
-          <Visuals position="bottom"/>
+        
         </SectionWrapper>
       </div>
     </div>
