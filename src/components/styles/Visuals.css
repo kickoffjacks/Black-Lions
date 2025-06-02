@@ -1,10 +1,31 @@
 .GridGlow {
-    width: 800px;
-    height: 800px;
-    z-index: -1;
-    margin-top: -200vh;
-    margin-left: 900px;
-    
+  width: 800px;
+  max-width: 800px;
+  pointer-events: none;
+
 
 }
 
+.visuals-container {
+    position: relative;
+    width: 100%;
+    display: flex;
+    pointer-events: none;
+    z-index: 0;
+}
+
+.visuals-top {
+    position: absolute;
+    top: -20vh;
+    left: 50vw;
+    z-index: -1;
+}
+
+.visuals-bottom {
+    position: absolute;
+    bottom: -30vh;
+    left: -42vw;
+    rotate: 20deg;
+    z-index: -2;
+    
+}

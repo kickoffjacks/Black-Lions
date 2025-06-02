@@ -48,7 +48,7 @@ function App() {
         <SectionWrapper>
           <Home />
         </SectionWrapper>
-        <Visuals style={{ width: '300px', height: '300px' }} position="top"/>
+        <Visuals  position="top"/>
 
          {/* tijdelijke border */}
         <MainSectionLayout>
