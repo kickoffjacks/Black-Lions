@@ -1,35 +1,125 @@
 .processContainer {
-    height: 80vh;
+    height: auto;
     display: grid;
-    grid-template-rows: repeat(1fr, 1fr);
-    grid-template-columns: repeat(1fr, 1fr);
+    grid-template-rows: 100px 1fr;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-template-areas:
-        "header header"
-        "item1 item2"
-        "item3 item4"
+        "header header header header"
+        "item1 item2 item3 item4"
     ;
-    gap: 10px;
+    gap: 20px;
     padding: 10px;
     align-self: center;
-}
+
+
+    }
 
 .processBox1 {
-    height: 100%;
-    width: 80%;
-    background-color: rgb(20, 20, 20);
+    height: 50vh;
+    width: 17vw;
+    background-color: rgba(30, 30, 30,0.1);
     border-radius: 10px;
-    border: 1px solid rgb(32, 158, 97);
+    /* border: 1px solid rgb(24, 127, 116); */
+    padding: 10px;
+    box-shadow: -10px 10px 10px rgba(32, 39, 45, 0.3);
+    transition: all 0.3s ease;
+
+   
+}
+.processBox1:hover{
+    transition: all 0.5s ease;
+    transform: translate(10px, -10px);
 }
 
 .processTitle {
     grid-area: header;
     color: seashell;
-    font-size: 2.2rem;
+    font-size: 2.8rem;
+    height: 100px;
+    font-weight: 900;
+
+
+}
+.processboxText{
+    color: rgb(255, 255, 255);
+    font-size: 1.2rem;
 }
 
 .item1 {
     grid-area: item1;
-    background-color: rgb(205, 41, 41);
+    background-color: rgb(30, 30, 30);
 
 
+}
+.item2 {
+    grid-area: item2;
+    background-color: rgb(30, 30, 30);
+
+
+}
+.item3 {
+    grid-area: item3;
+    background-color: rgb(30, 30, 30);
+
+
+}
+.item4 {
+    grid-area: item4;
+    background-color: rgb(30, 30, 30);
+
+
+}
+.fase1IconsContent{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+.explainContent{
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+}
+.explainPic{
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+.explainText{
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    padding: 10px;
+    font-weight: 500;
+    position: relative;
+}
+.explainLineContent{
+    display: flex;
+    flex-direction: row;
+}
+.iconTitle{
+    color: rgb(255, 255, 255);
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 10px;
+    height: 0;
+    position: relative;
+    bottom: 20%;
+    right: 10%;
+
+}
+.contentCard{
+    width: 80vw;
+    height: auto;
+    padding: 10px;
+    border-radius: 20px;
+    background: #23074d;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #cc5333, #23074d);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #cc5333, #23074d); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+   
+    
+    box-shadow: 0 0 40px #d76d784d;
+    display: flex;    
 }

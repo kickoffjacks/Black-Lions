@@ -9,8 +9,9 @@ function ScreenshotsSection() {
     return (
         <div className="ScreenshotContainer">
             <div className='screenshotContent'>
+                
 
-                <h1 style={{color: 'white', marginTop: -50, marginBottom: 70}}>Hier een kleine sneakpeak van ons nieuwe project.</h1>
+                <h1 className="sneakpeakText">Hier een kleine sneakpeak van ons nieuwe project...</h1>
 
                 <div className="screenshotContentBox">
                     <img src={demofoto1} className='screenshotImage' />
