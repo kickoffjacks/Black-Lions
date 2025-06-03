@@ -9,139 +9,157 @@ import feedback from '../assets/positive-review.png';
 import development from '../assets/physics.png';
 import api from '../assets/api-integration.png';
 
+
+
 function Process() {
+
+    const ContentCard = ({ children }) => {
+        return (
+            <div className="contentCard">
+                {children}
+            </div>
+
+        )
+    };
     return (
-        <div className="processContainer">
-
-            <h1 className="processTitle">Ons Process.</h1>
-            <div className="processBox1">
-                <h2
-                    className="processboxText">Fase 1: Onderzoek</h2>
-                <div className="explainContent">
-
-                    <div className="fase1IconsContent">
-
-                        <div className="explainLineContent">
 
 
-                            <img src={targetAudiencePic} className='explainPic' />
-                            <p className="explainText">Target Audience</p>
+
+        <ContentCard>
+            <div className="processContainer">
+
+
+
+                <p className="processTitle">Ons Process.</p>
+                    <div className="processBox1 item1">
+                        <h2
+                            className="processboxText">Fase 1: Onderzoek</h2>
+                        <div className="explainContent">
+
+                            <div className="fase1IconsContent">
+
+                                <div className="explainLineContent">
+
+
+                                    <img src={targetAudiencePic} className='explainPic' />
+                                    <p className="explainText">Target Audience</p>
+                                </div>
+                                <div className="explainLineContent">
+
+                                    <img src={researchPic} className='explainPic' />
+                                    <p className="explainText">Analyse</p>
+                                </div>
+                                <div className="explainLineContent">
+
+                                    <img src={featurePic} className='explainPic' />
+                                    <p className="explainText">Features</p>
+                                </div>
+
+                            </div>
+
+
                         </div>
-                        <div className="explainLineContent">
+                    </div>
+                    <div className="processBox1 item2">
+                        <h2
+                            className="processboxText">Fase 2: Ontwikkeling </h2>
 
-                            <img src={researchPic} className='explainPic' />
-                            <p className="explainText">Analyse</p>
-                        </div>
-                        <div className="explainLineContent">
+                        <div className="explainContent">
 
-                            <img src={featurePic} className='explainPic' />
-                            <p className="explainText">Features</p>
-                        </div>
+                            <div className="fase1IconsContent">
+
+                                <div className="explainLineContent">
+
+
+                                    <img src={wireframe} className='explainPic' />
+                                    <p className="explainText">WireFrames: </p>
+                                </div>
+                                <div className="explainLineContent">
+
+                                    <img src={design} className='explainPic' />
+                                    <p className="explainText">Design</p>
+                                </div>
+                                <div className="explainLineContent">
+
+                                    <img src={development} className='explainPic' />
+                                    <p className="explainText">Development</p>
+                                </div>
+                                <div className="explainLineContent">
+
+                                    <img src={api} className='explainPic' />
+                                    <p className="explainText">Api intergratie</p>
+                                </div>
+
+                            </div>
+
 
                     </div>
-
-
                 </div>
-            </div>
-            <div className="processBox1">
-                <h2
-                    className="processboxText">Fase 2: Ontwikkeling </h2>
+                <div className="processBox1 item3">
+                    <h2
+                        className="processboxText">Fase 3: Oplevering </h2>
+                    <div className="explainContent">
 
-                <div className="explainContent">
+                        <div className="fase1IconsContent">
 
-                    <div className="fase1IconsContent">
-
-                        <div className="explainLineContent">
+                            <div className="explainLineContent">
 
 
-                            <img src={wireframe} className='explainPic' />
-                            <p className="explainText">WireFrames: </p>
+                                <img src={targetAudiencePic} className='explainPic' />
+                                <p className="explainText">Testen</p>
+                            </div>
+                            <div className="explainLineContent">
+
+                                <img src={researchPic} className='explainPic' />
+                                <p className="explainText">Analyse:</p>
+                            </div>
+                            <div className="explainLineContent">
+
+                                <img src={feedback} className='explainPic' />
+                                <p className="explainText">Feedbackronde</p>
+                            </div>
+
                         </div>
-                        <div className="explainLineContent">
 
-                            <img src={design} className='explainPic' />
-                            <p className="explainText">Design</p>
-                        </div>
-                        <div className="explainLineContent">
-
-                            <img src={development} className='explainPic' />
-                            <p className="explainText">Development</p>
-                        </div>
-                        <div className="explainLineContent">
-
-                            <img src={api} className='explainPic' />
-                            <p className="explainText">Api intergratie</p>
-                        </div>
 
                     </div>
-
-
                 </div>
-            </div>
-            <div className="processBox1">
-                <h2
-                    className="processboxText">Fase 3: Oplevering </h2>
-                <div className="explainContent">
+                <div className="processBox1 item4">
+                    <h2
+                        className="processboxText">Fase 4: Aftercare </h2>
+                    <div className="explainContent">
 
-                    <div className="fase1IconsContent">
+                        <div className="fase1IconsContent">
 
-                        <div className="explainLineContent">
+                            <div className="explainLineContent">
 
 
-                            <img src={targetAudiencePic} className='explainPic' />
-                            <p className="explainText">Testen</p>
+                                <img src={targetAudiencePic} className='explainPic' />
+                                <p className="explainText">Monitoring</p>
+                            </div>
+                            <div className="explainLineContent">
+
+                                <img src={researchPic} className='explainPic' />
+                                <p className="explainText">Bugfixes</p>
+                            </div>
+                            <div className="explainLineContent">
+
+                                <img src={featurePic} className='explainPic' />
+                                <p className="explainText">Optimalisatie</p>
+                            </div>
+                            <div className="explainLineContent">
+
+                                <img src={featurePic} className='explainPic' />
+                                <p className="explainText">Ondersteuning:</p>
+                            </div>
+
                         </div>
-                        <div className="explainLineContent">
 
-                            <img src={researchPic} className='explainPic' />
-                            <p className="explainText">Analyse:</p>
-                        </div>
-                        <div className="explainLineContent">
-
-                            <img src={feedback} className='explainPic' />
-                            <p className="explainText">Feedbackronde</p>
-                        </div>
 
                     </div>
-
-
                 </div>
-            </div>
-            <div className="processBox1">
-                <h2
-                    className="processboxText">Fase 4: Aftercare </h2>
-                <div className="explainContent">
-
-                    <div className="fase1IconsContent">
-
-                        <div className="explainLineContent">
-
-
-                            <img src={targetAudiencePic} className='explainPic' />
-                            <p className="explainText">Monitoring</p>
-                        </div>
-                        <div className="explainLineContent">
-
-                            <img src={researchPic} className='explainPic' />
-                            <p className="explainText">Bugfixes</p>
-                        </div>
-                        <div className="explainLineContent">
-
-                            <img src={featurePic} className='explainPic' />
-                            <p className="explainText">Optimalisatie</p>
-                        </div>
-                        <div className="explainLineContent">
-
-                            <img src={featurePic} className='explainPic' />
-                            <p className="explainText">Ondersteuning:</p>
-                        </div>
-
-                    </div>
-
-
-                </div>
-            </div>
-        </div>
+            </div >
+        </ContentCard>
     );
 }
 

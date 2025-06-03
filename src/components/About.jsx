@@ -11,7 +11,7 @@ function About() {
                 <h1 className="overonsTitle">Slim, Fris, Modern.</h1>
 
 
-                <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', height: '110%' }}>
+                <div style={{ display: 'flex', flexDirection: 'row', gap: '20px', height: 'auto', paddingTop: '20px', }}>
                     <div className="overonsTextContainerHalve">
 
 
