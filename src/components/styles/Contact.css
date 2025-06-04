@@ -1,3 +1,5 @@
+
+
 .contactContainer{
     display: flex;
     height: 40vh;
@@ -7,17 +9,26 @@
  
     
 
-    
+
 }
-.contactContent{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    width: 100%;
+
+.contactContent {
+  flex-direction: column;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
 }
-.CTAtext{
-    font-size: 3.2rem;
-    color: white;
+
+.CTAtext {
+  font-size: 4.2em;
+  color: white;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 20px;
 }
 
 .button-container {
@@ -29,68 +40,59 @@
 
 .belOns {
   position: relative;
-  padding: 12px 24px;
+  /* padding: 12px 24px; */
+  height: 40px;
+  width: 200px;
+
+
+  font-family: 'WDXL Lubrifont TC';
   background: transparent;
-  font-size: 2em;
+  font-size: 1.5em;
   font-weight: bold;
   color: #ffff;
-  border: 2px solid rgba(0,209,194);
-   background: linear-gradient(to top, rgba(0, 214, 200, 0.175)0%,rgba(0, 214, 200, 0)50%);
+  border: 1px solid rgba(0, 209, 194);
   border-radius: 2px;
   overflow: hidden;
   cursor: pointer;
   transition: color 0.3s ease;
-  width: 250px;
-  border-radius: 15px;
-}
-.belOns::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-  background: linear-gradient(to top, rgba(0, 214, 200, 0.175)0%,rgb(0, 214, 200)50%);
-  z-index: -1;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-}
-.belOns:hover::before {
-  transform: translateX(0);
-}
-.belOns:hover {
-  color: #000;
-}
-.mailOns {
-  position: relative;
-  padding: 12px 24px;
-  background: transparent;
-  font-size: 2em;
-  font-weight: bold;
-  color: #ffff;
-  border: 2px solid rgba(0,209,194);
-   background: linear-gradient(to top, rgba(0, 214, 200, 0.175)0%,rgba(0, 214, 200, 0)50%);
-  border-radius: 2px;
-  overflow: hidden;
-  cursor: pointer;
-  transition: color 0.3s ease;
-  width: 250px;
-  border-radius: 15px;
-}
-.mailOns::before {
-  content: "";
-  position: absolute;
-  top: 0; left: 0;
-  width: 100%; height: 100%;
-clip-path: polygon(0 0, 90% 0, 100% 100%, 0 100%);
-  background: linear-gradient(to top, rgba(0, 214, 200, 0.175)0%,rgb(0, 214, 200)50%);
-  z-index: -1;
-  transform: translateX(-100%);
-  transition: transform 0.3s ease;
-}
-.mailOns:hover::before {
-  transform: translateX(0);
-}
-.mailOns:hover {
-  color: #000;
+
 }
 
+
+
+.belOns:hover {
+  color: #ffffff;
+}
+
+.mailOns {
+  position: relative;
+  /* padding: 10px 20px; */
+  height: 40px;
+  width: 200px;
+  font-family: 'WDXL Lubrifont TC';
+  background-color: rgb();
+  background-color: var(--gridarea-color);
+  font-size: 1.5em;
+  font-weight: bold;
+  color: #ffff;
+  border: 1px solid rgba(0, 209, 194);
+  border-radius: 2px;
+  overflow: hidden;
+  cursor: pointer;
+  transition: color 0.3s ease;
+
+}
+
+
+
+
+
+.mailOns:hover {
+  color: #ffffff;
+}
+
+.CTAtextp {
+  font-size: 1.2em;
+  color: white;
+
+}
