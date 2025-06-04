@@ -23,8 +23,6 @@
     padding: 10px;
     box-shadow: -10px 10px 10px rgba(32, 39, 45, 0.3);
     transition: all 0.3s ease;
-
-   
 }
 .processBox1:hover{
     transition: all 0.5s ease;
