@@ -13,8 +13,8 @@ export default function Home() {
          <a href="http://localhost:3000/"> <img src={GridAreaLogoTextOnlyWhite} className="gridAreaLogoTextOnlyWhite" alt="Grid Area Logo"/> </a>
         </div>
 
-        <div style={{ width: "50%", }}>
-          <p className="explainText">Het fundament voor jouw <br/> digitale zichtbaarheid en groei.</p>
+        <div style={{ width: "100%", }}>
+          <p className="explainText">Wij brengen jou app/website idee tot werkelijkheid</p>
         </div>
         <button className="startButton">Boek een afspraak</button>
 
