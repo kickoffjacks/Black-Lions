@@ -11,6 +11,7 @@ import gridBackground from './components/compUse/gridbackground';
 import MainSectionLayout from './components/compUse/MainSectionLayout';
 import { useEffect, useRef } from 'react';
 import Visuals from './components/compUse/Visuals';
+import WhatIsGrid from './components/WhatIsGrid';
 
 
 
@@ -48,14 +49,20 @@ function App() {
         <SectionWrapper>
           <Home />
         </SectionWrapper>
-        <Visuals  position="top"/>
+        <Visuals position="top" />
 
-         {/* tijdelijke border */}
+        <MainSectionLayout>
+          <SectionWrapper>
+            <WhatIsGrid />
+          </SectionWrapper>
+        </MainSectionLayout>
+        {/* tijdelijke border */}
         <MainSectionLayout>
           <SectionWrapper>
             <ScreenshotsSection />
           </SectionWrapper>
         </MainSectionLayout>
+
 
 
         <MainSectionLayout>
@@ -69,7 +76,7 @@ function App() {
             <Process />
           </SectionWrapper>
         </MainSectionLayout>
-        
+
         <MainSectionLayout>
           <SectionWrapper>
             <Contact />
@@ -78,7 +85,7 @@ function App() {
 
         <SectionWrapper>
           <Footer />
-        
+
         </SectionWrapper>
       </div>
     </div>
