@@ -19,7 +19,8 @@ export default function Home() {
 
         <div style={{ width: "50%" }}>
           <p className="explainTextHeader">
-            Het fundament voor jouw <br /> digitale zichtbaarheid en groei.
+            Bouw de digitale standplaats
+            <br /> voor jouw online legacy.
           </p>
         </div>
         <button className="startButton">Boek een afspraak</button>
