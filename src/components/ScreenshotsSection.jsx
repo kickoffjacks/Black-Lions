@@ -3,6 +3,7 @@ import './styles/ScreenShotsSection.css';
 import demofoto1 from '../assets/demoFoto1.PNG';
 import demofoto2 from '../assets/demoFoto2.PNG';
 import demofoto3 from '../assets/demoFoto3.PNG';
+import demofoto4 from '../assets/demoFoto4.PNG';
 
 
 function ScreenshotsSection() {
@@ -17,6 +18,7 @@ function ScreenshotsSection() {
                     <img src={demofoto1} className='screenshotImage' />
                     <img src={demofoto2} className='screenshotImage' />
                     <img src={demofoto3} className='screenshotImage' />
+                    <img src={demofoto4} className='screenshotImage' />
                 </div>
             </div>
 
