@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles/Process.css";
 import targetAudiencePic from "../assets/target-audience.png";
 import researchPic from "../assets/search.png";

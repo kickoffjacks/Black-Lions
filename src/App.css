@@ -40,7 +40,7 @@
 .main-container {
   position: relative;
   min-height: 100vh;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 
 /* .app-background-grid1 {

@@ -1,4 +1,3 @@
-import React from "react";
 import "./styles/ScreenShotsSection.css";
 import demofoto1 from "../assets/demoFoto1.PNG";
 import demofoto2 from "../assets/demoFoto2.PNG";
