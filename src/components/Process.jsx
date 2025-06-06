@@ -28,15 +28,15 @@ function Process() {
           <div className="explainContent">
             <div className="fase1IconsContent">
               <div className="explainLineContent">
-                <img src={targetAudiencePic} className="explainPic" />
+                <img src={targetAudiencePic} className="explainPic" alt="" />
                 <p className="explainText">Target Audience</p>
               </div>
               <div className="explainLineContent">
-                <img src={researchPic} className="explainPic" />
+                <img src={researchPic} className="explainPic" alt="" />
                 <p className="explainText">Analyse</p>
               </div>
               <div className="explainLineContent">
-                <img src={featurePic} className="explainPic" />
+                <img src={featurePic} className="explainPic" alt="" />
                 <p className="explainText">Features</p>
               </div>
             </div>
@@ -48,19 +48,19 @@ function Process() {
           <div className="explainContent">
             <div className="fase1IconsContent">
               <div className="explainLineContent">
-                <img src={wireframe} className="explainPic" />
+                <img src={wireframe} className="explainPic" alt="" />
                 <p className="explainText">WireFrames</p>
               </div>
               <div className="explainLineContent">
-                <img src={design} className="explainPic" />
+                <img src={design} className="explainPic" alt="" />
                 <p className="explainText">Design</p>
               </div>
               <div className="explainLineContent">
-                <img src={development} className="explainPic" />
+                <img src={development} className="explainPic" alt="" />
                 <p className="explainText">Development</p>
               </div>
               <div className="explainLineContent">
-                <img src={api} className="explainPic" />
+                <img src={api} className="explainPic" alt="" />
                 <p className="explainText">Api intergratie</p>
               </div>
             </div>
@@ -71,15 +71,15 @@ function Process() {
           <div className="explainContent">
             <div className="fase1IconsContent">
               <div className="explainLineContent">
-                <img src={testing} className="explainPic" />
+                <img src={testing} className="explainPic" alt="" />
                 <p className="explainText">Final test</p>
               </div>
               <div className="explainLineContent">
-                <img src={documentatie} className="explainPic" />
+                <img src={documentatie} className="explainPic" alt="" />
                 <p className="explainText">Documentatie</p>
               </div>
               <div className="explainLineContent">
-                <img src={feedback} className="explainPic" />
+                <img src={feedback} className="explainPic" alt="" />
                 <p className="explainText">Feedbackronde</p>
               </div>
             </div>
@@ -90,19 +90,19 @@ function Process() {
           <div className="explainContent">
             <div className="fase1IconsContent">
               <div className="explainLineContent">
-                <img src={monitoring} className="explainPic" />
+                <img src={monitoring} className="explainPic" alt="" />
                 <p className="explainText">Monitoring</p>
               </div>
               <div className="explainLineContent">
-                <img src={bugFix} className="explainPic" />
+                <img src={bugFix} className="explainPic" alt="" />
                 <p className="explainText">Bugfixes</p>
               </div>
               <div className="explainLineContent">
-                <img src={optimalisation} className="explainPic" />
+                <img src={optimalisation} className="explainPic" alt="" />
                 <p className="explainText">Optimalisatie</p>
               </div>
               <div className="explainLineContent">
-                <img src={customerService} className="explainPic" />
+                <img src={customerService} className="explainPic" alt="" />
                 <p className="explainText">Ondersteuning</p>
               </div>
             </div>
