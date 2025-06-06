@@ -1,4 +1,3 @@
-import React, { useState, useEffect } from "react";
 import "./styles/Header.css";
 import SectionWrapper from "./compUse/SectionWrapper";
 import gridareafiguur from "../assets/gridareametfiguur.png";
@@ -13,14 +12,20 @@ function Header() {
       <div className="navigationBarContainer">
         <nav className="navigationBar">
           <ul className="navigationList">
-            <li className="navigationItem">
-              <a href="#home">Home</a>
+            <li className="navigationItem home-item">
+              <a href="#home">
+                <span>Home</span>
+              </a>
             </li>
-            <li className="navigationItem">
-              <a href="#watIsGridArea">Wat is Grid Area?</a>
+            <li className="navigationItem watIsGridArea-item">
+              <a href="#watIsGridArea">
+                <span>Wat is Grid Area?</span>
+              </a>
             </li>
-            <li className="navigationItem">
-              <a href="#onsProcess">Ons Process</a>
+            <li className="navigationItem onsProcess-item">
+              <a href="#onsProcess">
+                <span>Ons Process</span>
+              </a>
             </li>
           </ul>
         </nav>
