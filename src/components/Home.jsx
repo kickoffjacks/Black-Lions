@@ -1,6 +1,6 @@
-import React from "react";
 import "./styles/Home.css";
 import GridAreaLogoTextOnlyWhite from "../assets/GridAreaLogoTextOnlyWhite.png";
+import StartButton from "./compUse/StartButton.jsx";
 
 export default function Home() {
   return (
@@ -23,7 +23,7 @@ export default function Home() {
             <br /> voor jouw online legacy.
           </p>
         </div>
-        <button className="startButton">Boek een afspraak</button>
+        <StartButton />
       </div>
     </div>
   );

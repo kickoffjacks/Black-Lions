@@ -1,6 +1,7 @@
 import "./styles/Header.css";
 import SectionWrapper from "./compUse/SectionWrapper";
 import gridareafiguur from "../assets/gridareametfiguur.png";
+import StartButton from "./compUse/StartButton";
 
 function Header() {
   return (
@@ -29,6 +30,7 @@ function Header() {
             </li>
           </ul>
         </nav>
+        <StartButton isHeader={true} />
       </div>
     </header>
   );
