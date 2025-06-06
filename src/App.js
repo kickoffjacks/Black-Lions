@@ -47,13 +47,17 @@ function App() {
 
 
         <SectionWrapper>
-          <Home id="home"/>
+          <div id="home">
+            <Home />
+            </div>
         </SectionWrapper>
         <Visuals position="top" />
 
         <MainSectionLayout>
           <SectionWrapper>
-            <WhatIsGrid id="watIsGridArea"/>
+            <div id="watIsGridArea">
+              <WhatIsGrid />
+              </div>
           </SectionWrapper>
         </MainSectionLayout>
         {/* tijdelijke border */}
@@ -73,7 +77,9 @@ function App() {
 
         <MainSectionLayout>
           <SectionWrapper>
-            <Process id="onsProcess"/>
+            <div id="onsProcess">
+              <Process />
+              </div>
           </SectionWrapper>
         </MainSectionLayout>
 

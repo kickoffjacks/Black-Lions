@@ -1,76 +1,131 @@
 /*RGBA IS rgba(0,214,199,255)*/
 
-.header-container{
-    
-    /* text-align: center; */
-    height: auto;
-    /*background-color: rgb(25, 25, 25, 0.5);*/
-    background-color: rgba(5, 5, 5,0);
-    position: sticky;
-    top: 0;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
-    z-index: 1000;
-    width: 100%;
-    flex-wrap: wrap;
-    backdrop-filter: blur(0px);
-    -webkit-backdrop-filter: blur(10px);
+.header-container {
+  height: auto;
+  background-color: rgba(0, 0, 0, 0);
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  z-index: 1000;
+  width: 100%;
+  height: 90px;
+  flex-wrap: wrap;
+  backdrop-filter: blur(5px);
+  -webkit-backdrop-filter: blur(10px);
 }
-.headerText{
-    color: white;
+
+.headerText {
+  color: white;
 }
-.headerLogo{
-    height: 100px;
-    object-fit: contain;
-    margin-left: 5vw;
-    /*transition: all 0.3s ease;*/
-    /* margin-right: 20px; */
+
+.headerLogo {
+  height: 100px;
+  object-fit: contain;
+  margin-left: 5vw;
 }
 
 .headerLogo:hover {
-    cursor: pointer;
+  cursor: pointer;
 }
 
 .navigationBarContainer {
-    display: flex;
-    flex-wrap: nowrap;
-    background-color: rgba(188, 143, 143, 0);
-    width: 60%;
-    height: 20px;
-    margin-left: 2vw;
+  display: flex;
+  flex-wrap: nowrap;
+  background-color: rgba(188, 143, 143, 0);
+  width: 60%;
+  height: 20px;
+  margin-left: 2vw;
 }
 
 .navigationBar {
-    
-    width: 50%;
-    height: 100%;
+  width: 50%;
+  height: 100%;
 }
 
 .navigationList {
-    display: flex;
-    flex-direction: row;
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    gap: 40px;
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  gap: 40px;
 }
 
 .navigationItem a {
-    padding: 10px;
-    color: white;
-    text-decoration: none;
-    font-size: 1.7rem;
-    color: rgb(104, 203, 208);
-    transition: color 0.3s ease;
+  position: relative; /* Zorg dat de pseudo-elementen relatief aan de <a> staan */
+    padding: 10px; 
+  color: rgb(104, 203, 208);
+  text-decoration: none;
+  font-size: 1.7rem;
+  transition: color 0.3s ease;
 }
 
-.navigationItem a:hover
-{
-    color: rgb(200, 214, 0);
-    outline: none;
-    text-decoration: none;
+.navigationItem a span {
+  position: relative;
+  display: inline-block; /* Zorg dat de span goed wordt weergegeven */
 }
+
+/* Pseudo-elementen voor het hover-effect */
+.navigationItem a:before,
+.navigationItem a:after,
+.navigationItem a span:before,
+.navigationItem a span:after {
+  position: absolute;
+  content: "";
+  background: rgb(104, 203, 208); /* Kleur van het kader */
+  transition: all 0.3s ease;
+}
+
+.navigationItem a:before { /*DIT IS VOOR DE RECHTER LIJN*/
+  right: 0;
+  bottom: 0;
+  height: 0;
+  width: 2px;
+}
+
+.navigationItem a:after { /*DIT IS VOOR DE ONDERSTE LIJN*/
+  right: 0;
+  bottom: 0;
+  width: 0;
+  height: 2px;
+}
+
+.navigationItem a:hover:before { /*DIT IS VOOR DE RECHTER LIJN*/
+  height: 15%;
+}
+
+.navigationItem a:hover:after { /*DIT IS VOOR DE ONDERSTE LIJN*/
+  width: 15%;
+}
+
+.navigationItem a span:before { /*DIT IS VOOR DE LINKER LIJN*/
+  left: -11px;
+  top: 0;
+  width: 2px;
+  height: 0;
+}
+
+.navigationItem a span:after { /*DIT IS VOOR DE BOVENSTE LIJN*/
+  left: -11px;
+  top: 0;
+  height: 2px;
+  width: 0;
+}
+
+.navigationItem a:hover span:before { /*DIT IS VOOR DE LINKER LIJN*/
+  height: 15%;
+}
+
+.navigationItem a:hover span:after { /*DIT IS VOOR DE BOVENSTE LIJN*/
+  width: 15%;
+}
+
+.navigationItem a:hover span {
+  color: rgb(0, 214, 199); /* Kleur bij hover */
+}
+
 html {
-    scroll-behavior: smooth;
+  scroll-behavior: smooth;
 }
