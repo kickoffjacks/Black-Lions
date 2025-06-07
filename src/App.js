@@ -91,7 +91,6 @@ function App() {
 
         <SectionWrapper>
           <Footer />
-
         </SectionWrapper>
       </div>
     </div>
