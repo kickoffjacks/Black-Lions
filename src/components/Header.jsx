@@ -3,7 +3,7 @@ import SectionWrapper from "./compUse/SectionWrapper";
 import gridareafiguur from "../assets/gridareametfiguur.png";
 import StartButton from "./compUse/StartButton";
 
-function Header() {
+function Header({ openIntakeForm }) {
   return (
     <header className="header-container">
       <a>
@@ -30,7 +30,7 @@ function Header() {
             </li>
           </ul>
         </nav>
-        <StartButton isHeader={true} />
+        <StartButton isHeader={true} openIntakeForm={openIntakeForm} />
       </div>
     </header>
   );

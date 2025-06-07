@@ -9,15 +9,17 @@ import Footer from './components/Footer';
 import SectionWrapper from './components/compUse/SectionWrapper';
 import gridBackground from './components/compUse/gridbackground';
 import MainSectionLayout from './components/compUse/MainSectionLayout';
-import { useEffect, useRef } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import Visuals from './components/compUse/Visuals';
 import WhatIsGrid from './components/WhatIsGrid';
+import IntakeForm from './components/compUse/IntakeForm';
 
 
 
 function App() {
   const backgroundRef1 = useRef(null); // Voor Grid 1
   const backgroundRef2 = useRef(null); // Voor Grid 2
+  const [isIntakeFormOpen, setIsIntakeFormOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -35,20 +37,22 @@ function App() {
     return () => window.removeEventListener('scroll', handleScroll); // Cleanup
   }, []);
 
+  const openIntakeForm = () => setIsIntakeFormOpen(true);
+  const closeIntakeForm = () => setIsIntakeFormOpen(false);
+
   return (
     //gebruik hier alleen components, geen HTML tags zoals <div> of <p>
 
     <div className="main-container">
       {/* <gridBackground /> */}
 
-
-      <Header />
+      <Header openIntakeForm={openIntakeForm} />
       <div className="mainContent">
 
 
         <SectionWrapper>
           <div id="home">
-            <Home />
+            <Home openIntakeForm={openIntakeForm} />
             </div>
         </SectionWrapper>
         <Visuals position="top" />
@@ -94,6 +98,7 @@ function App() {
 
         </SectionWrapper>
       </div>
+      <IntakeForm isOpen={isIntakeFormOpen} onClose={closeIntakeForm} />
     </div>
   );
 }
