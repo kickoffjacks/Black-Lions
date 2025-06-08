@@ -2,7 +2,7 @@ import "./styles/Home.css";
 import GridAreaLogoTextOnlyWhite from "../assets/GridAreaLogoTextOnlyWhite.png";
 import StartButton from "./compUse/StartButton.jsx";
 
-export default function Home() {
+export default function Home({ openIntakeForm }) {
   return (
     <div className="homeContainer">
       <div className="homeContent">
@@ -23,7 +23,7 @@ export default function Home() {
             <br /> voor jouw online legacy.
           </p>
         </div>
-        <StartButton />
+        <StartButton openIntakeForm={openIntakeForm} />
       </div>
     </div>
   );
