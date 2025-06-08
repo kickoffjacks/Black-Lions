@@ -1,5 +1,4 @@
-import React from "react";
-import { useState } from "react";
+import React, { useState } from "react";
 import "../styles/IntakeForm.css";
 
 const IntakeForm = ({ isOpen, onClose }) => {
@@ -22,9 +21,9 @@ const IntakeForm = ({ isOpen, onClose }) => {
           X
         </button>
         <h2>Dit is de start van jouw digitale overname</h2>
-        <div className="form-columns">
-          <div className="intake-form-column1">
-            <form>
+        <form action="https://submit-form.com/33k571r3T">
+          <div className="form-columns">
+            <div className="intake-form-column1">
               <label>
                 Name:
                 <input type="text" name="name" required />
@@ -37,15 +36,12 @@ const IntakeForm = ({ isOpen, onClose }) => {
                 Phone:
                 <input type="tel" name="phone" required />
               </label>
-            </form>
-          </div>
-          <button type="submit">Submit</button>
-          <div className="intake-form-column2">
-            <form>
+            </div>
+            <div className="intake-form-column2">
               <label className="option-label">Ik wil een:</label>
               <label>
                 <input
-                  itemType="checkbox"
+                  type="checkbox" // Correcte attribuut
                   name="Website"
                   checked={selectedOptions.Website}
                   onChange={handleOptionChange}
@@ -54,16 +50,30 @@ const IntakeForm = ({ isOpen, onClose }) => {
               </label>
               <label>
                 <input
-                  itemType="checkbox"
+                  type="checkbox" // Correcte attribuut
                   name="App"
                   checked={selectedOptions.App}
                   onChange={handleOptionChange}
                 />
                 <span className="option-text">App</span>
               </label>
-            </form>
+              <label>
+                <textarea
+                  name="uitleg"
+                  placeholder="Voeg beschrijving toe.. 
+                  (Denk aan:
+                  Target Audience, 
+                  Functionaliteiten,
+                  Handige informatie om te delen)"
+                  required
+                />
+              </label>
+            </div>
           </div>
-        </div>
+          <button className="submitButton" type="submit">
+            Submit
+          </button>
+        </form>
       </div>
     </div>
   );
