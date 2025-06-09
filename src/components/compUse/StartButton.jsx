@@ -7,7 +7,7 @@ const StartButton = ({ isHeader = false, openIntakeForm }) => {
   };
   return (
     <button
-      className={`startButton ${isHeader ? "startButton-header" : ""}`}
+      className={` ${isHeader ? "startButton-header" : ""}`}
       onClick={handleClick}
     >
       <a href="#contact" style={{ textDecoration: "none", color: "inherit" }}>
