@@ -1,0 +1,178 @@
+.intake-form-overlay {
+  position: fixed;
+  top: 5%;
+  left: 5%;
+  right: 5%;
+  bottom: 5%;
+  background-color: rgba(0, 0, 0, 0.651);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1001;
+  height: 90%;
+  width: 90%;
+  border-radius: 5px;
+  box-shadow: #00ccbb 0px 0px 10px 1px;
+}
+
+.intake-form-content {
+    background: linear-gradient(to bottom, rgba(0, 214, 200, 0.175)0%,rgb(0, 214, 200)150%) 4s ease-in-out;
+  border-radius: 5px;
+  width: 80%;
+  height: 80%;
+  position: relative;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  display: flex;
+   border-image: linear-gradient(to top, rgba(0, 214, 200, 0.7), rgba(0, 214, 200, 0));
+  border-image-slice: 1;
+}
+
+.form-columns {
+  display: flex;
+    flex-direction: row;
+  gap: 10vw;
+  width: 100%;
+  
+}
+
+.intake-form-column1 {
+  flex: 1;
+  margin-right: 10px;
+}
+
+.intake-form-column2 {
+  flex: 1;
+  margin-left: 10px;
+  width: 20vw;
+}
+
+.option-label {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  font-size: 1.2em;
+}
+
+/* Verwijder ongeldige label[type="checkbox"] en verbeter input[type="checkbox"] */
+input[type="checkbox"] {
+  margin-right: 10px;
+  appearance: none;
+  width: 10px !important;
+  height: 10px;
+  border: 2px solid white;
+  border-radius: 50%; 
+  position: relative;
+  cursor: pointer;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #00ccbb; /* Oplichtend effect */
+  border-color: #00ccbb;
+}
+
+input[type="checkbox"]:checked::after {
+  content: "\2713"; /* Checkmark */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 15px;
+}
+
+.option-text {
+  margin-left: 5px;
+}
+
+.intake-form-content h2 {
+  margin-top: 0;
+  color: white;
+}
+
+.intake-form-content label {
+  display: block;
+  margin: 10px 0;
+  color: white;
+  font-size: 1.1em;
+}
+
+.intake-form-content input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.625);
+  color: white;
+  border-radius: 5px;
+  font-size: 1em;
+}
+
+.intake-form-content textarea {
+  width: 120%;
+  height: 200px; /* Grotere hoogte voor zichtbaarheid */
+  padding: 8px;
+  margin-top: 5px;
+  background-color: rgba(0, 0, 0, 0.625);
+  color: rgb(255, 255, 255);
+  border-radius: 5px;
+  font-size: 1.2em;
+  resize: vertical; /* Laat gebruikers de hoogte aanpassen */
+}
+.intake-form-content button {
+  padding: 10px 20px;
+  margin-top: 10px;
+  background: linear-gradient(to top, rgba(0, 214, 200, 0.175)0%,rgba(0, 214, 200, 0)50%);
+  color: rgb(255, 255, 255);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1.2em;
+  transition: 0.3s ease;
+  border: 2px solid transparent;
+  border-image: linear-gradient(to top, rgba(0, 214, 200, 0.7), rgba(0, 214, 200, 0));
+  border-image-slice: 1;
+}
+
+.intake-form-content button:hover {
+  
+  transition: 0.3s ease;
+   background: linear-gradient(to bottom, rgba(0, 214, 200, 0.175)0%
+   );
+    border-image: linear-gradient(to bottom, rgba(0, 214, 200, 0.7), rgba(0, 214, 200, 0));
+  border-image-slice: 1;
+}
+
+.intake-form-close {
+  background-color: #63ff44;
+}
+
+.intake-form-close:hover {
+  background-color: #00cc30;
+}
+
+.close-button {
+  position: absolute;
+  top: 10px;
+  right: 0px;
+  background-color: rgba(83, 83, 83, 0.651);
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor: pointer;
+}
+
+.close-button:hover {
+  background-color: #9a2c0d;
+}
+
+.submitButton {
+    position: absolute;
+   top: 80;
+   left: 45%;
+}
