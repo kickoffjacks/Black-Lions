@@ -55,9 +55,12 @@
     justify-self: center;
     padding: 10px;
     flex-direction: column;
-    box-shadow: 0 0 20px rgb(30, 30, 30);
     transition: all 0.2s ease;
 
+}
+.gridbox1:hover{
+    background-color: rgb(14, 83, 132);
+    transition: all 0.3s ease;
 }
 
 .gridbox2 {
@@ -69,7 +72,6 @@
     justify-self: center;
     border-radius: 15px;
     margin-left: 20px;
-    box-shadow: 0 0 40px rgb(30, 30, 30);
     transition: all 0.2s ease;
     padding: 10px;
 
