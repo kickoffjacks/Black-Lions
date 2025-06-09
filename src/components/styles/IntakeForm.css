@@ -13,7 +13,6 @@
   width: 90%;
   border-radius: 5px;
   box-shadow: #00ccbb 0px 0px 10px 1px;
-
 }
 
 .intake-form-content {
@@ -97,8 +96,6 @@ input[type="checkbox"]:checked::after {
   margin: 10px 0;
   color: white;
   font-size: 1.1em;
- 
-  
 }
 
 .intake-form-content input {

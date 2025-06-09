@@ -57,7 +57,7 @@
 .navigationItem a {
   position: relative; /* Zorg dat de pseudo-elementen relatief aan de <a> staan */
     padding: 10px; 
-  color: rgb(104, 203, 208);
+  color: rgb(255, 255, 255);
   text-decoration: none;
   font-size: 1.7rem;
   transition: color 0.3s ease;
