@@ -3,7 +3,6 @@
     height: auto;
     width: 100%;
     flex-direction: column;
-
 }
 
 .gridTitleContent {
@@ -12,22 +11,18 @@
     text-align: center;
     height: 80%;
     width: 100%;
-
-
-
 }
 
 .titleText {
     color: white;
     font-size: 3.5em;
     text-align: center;
-
 }
 
 .gridareaContainer {
     display: grid;
     grid-template-areas:
-        "box1 box1"
+        "box1 box3"
         "box2 box3";
     grid-template-rows: 1fr 1fr;
     grid-template-columns: 50% 50%;
@@ -44,32 +39,31 @@
     grid-area: box1;
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: left;
     background-color: rgb(30, 30, 30);
     /* Example color */
     color: white;
     font-size: 1.5em;
     height: 180px;
-    width: 90%;
+    width: 100%;
     border-radius: 15px;
-    justify-self: center;
+    justify-self: left;
     padding: 10px;
     flex-direction: column;
-    box-shadow: 0 0 20px rgb(30, 30, 30);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.269);
     transition: all 0.2s ease;
-
+    left: 0;
 }
 
 .gridbox2 {
     grid-area: box2;
     height: auto;
-    width: 85%;
+    width: 100%;
     background-color: rgb(30, 30, 30);
     align-self: center;
-    justify-self: center;
+    justify-self: left;
     border-radius: 15px;
-    margin-left: 20px;
-    box-shadow: 0 0 40px rgb(30, 30, 30);
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.269);
     transition: all 0.2s ease;
     padding: 10px;
 
@@ -81,14 +75,17 @@
     height: auto;
     background-color: rgb(30, 30, 30);
     width: 85%;
+    height: 45vh;;
+    margin-bottom: -10vh;
     align-self: center;
-    justify-self: center;
+    justify-self: right;
     border-radius: 15px;
     margin-right: 20px;
-    box-shadow: 0 0 10px rgb(59, 46, 46);
+   box-shadow: 0 0 20px rgba(255, 255, 255, 0.269);
     transition: all 0.2s ease;
     overflow: hidden;
     padding: 10px;
+    margin-bottom: 20px;;
 
 }
 
@@ -101,9 +98,9 @@
 .gridbox1:hover,
 .gridbox2:hover,
 .gridbox3:hover {
-    outline: 2px dashed rgb(24, 127, 116);
+    outline: 2px dotted rgb(24, 127, 116);
     transform: tranlateY(-50px);
-    transition: all 0.2s ease;
+    transition: all 0.1s ease;
 }
 
 .angledUnderline {
@@ -125,12 +122,22 @@
     transform: rotate(-2deg);
 }
 
+.wieGridAreaText {
+    color: white;
+    font-size: 1.5rem;
+    font-family: 'inter', sans-serif;
+    
+}
+
 .wieText {
     color: white;
-    font-size: 1.2rem;
+    font-size: 2rem;
+    font-family: 'inter', sans-serif;
+    
 }
-.skilltext{
+.wieInhoudText{
     margin-left: 20px;
+    color: white
 }
 
 .gridSkillSet {
@@ -141,7 +148,7 @@
     width: 100%;
     color: white;
     font-size: 1.2rem;
-    gap: 20px;
+    gap: 30px;
 
 }
 .styletext{
