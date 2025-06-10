@@ -12,13 +12,13 @@ function WhatIsGrid() {
 
       <div className="gridareaContainer">
         <div className="gridbox1">
-          <h2 className="wieText">
+          <h2 className="wieGridAreaText">
             Wij zijn een groep ontwikkelaars die geweldige Apps en Websites voor
-            onze partners wilt creeren.{" "}
+            onze partners wilt creëeren.{" "}
           </h2>
-          <p className="wieuitlegText">
+          {/* <p className="wieuitlegText">
             Wij zijn een jonge groep app ontwikkelaars. Begonnen vanuit Utrecht.{" "}
-          </p>
+          </p> */}
         </div>
         <div className="gridbox2">
           <h1 className="wieText skilltext">🔥Skill Set:</h1>
@@ -26,14 +26,14 @@ function WhatIsGrid() {
             <li>React-Native</li>
             <li>React</li>
             <li>JavaScript</li>
-            {/* <li>HTML</li> */}
-            {/* <li>CSS</li> */}
+            <li>HTML</li>
+            <li>CSS</li>
             <li>TypeScript</li>
           </ul>
         </div>
         <div className="gridbox3">
           <h1 className="wieText">🎨Style Set:</h1>
-          <p className="wieText styletext">
+          <p className="wieInhoudText">
             Strak, functioneel, visueel sterk. Onze code *klikt*, onze ontwerpen
             *blinken*. Geen poespas. Alleen resultaat.
           </p>
